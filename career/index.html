@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>jungju.an — Career Statement</title>
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -95,6 +98,12 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
   .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(min-width:900px){.metrics{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media print{
+  body{background:#fff;color:#111}
+  .nav{position:static;border-bottom:1px solid #eee}
+  .section,.section-dark,.hero,.footer{page-break-inside:avoid}
+  .card,.project-card,.timeline-item,.dark-card,.metric-card{break-inside:avoid;box-shadow:none}
+}
 </style>
 </head>
 <body>
@@ -102,7 +111,8 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
   <div class="mono" style="font-weight:700;font-size:15px;">jungju.an</div>
   <div class="nav-links">
     <a href="#summary">Summary</a>
-    <a href="#contribution">Contribution</a>
+    <a href="#method">Method</a>
+    <a href="#cases">Cases</a>
     <a href="#history">History</a>
     <a href="#strength">Strength</a>
   </div>
@@ -110,44 +120,95 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
 
 <section class="hero">
   <div class="hero-tag fade-up">CAREER STATEMENT</div>
-  <h1 class="fade-d1">반응의 변수를 설계해<br><span>결과로 검증하는</span><br>콘텐츠 마케터</h1>
-  <p class="fade-d2">스포츠 기반 YouTube 10만 구독자 채널, Instagram 3주 만에 약 2.2만 팔로워 성장, 대표 릴스 100만+ 다수의 성과를 만들었습니다.<br>콘텐츠를 감각에만 맡기지 않고, 타깃·소재·첫 1초·감정·전환 지점을 조정하며 조회수를 팔로워와 브랜드 관심으로 연결해왔습니다.</p>
+  <h1 class="fade-d1">변수를 설계해<br><span>팀이 반복할 수 있는</span><br>결과로 남깁니다</h1>
+  <p class="fade-d2">스포츠 기반 YouTube 10만 구독자 채널, Instagram 3주 만에 약 2.2만 팔로워 성장, 대표 릴스 100만+ 다수의 성과를 만들었습니다.<br>개인 활동에서 검증한 콘텐츠 실험 방식을 팀의 목표, 브랜드 톤, 일정, 승인, 리포팅 안에서 재현 가능한 운영 구조로 전환해왔습니다.<br><br>콘텐츠를 감각에만 맡기지 않았습니다. 타깃, 소재, 첫 1초, 감정, 전환 변수를 설계하고 결과를 지표로 확인해 다음 실행으로 연결했습니다.</p>
   <div class="metrics fade-d3">
-    <div class="metric-card"><div class="metric-num" data-count="0" data-prefix="₩" data-suffix="">₩0</div><div class="metric-label">전 채널 광고비</div><div class="metric-sub">오가닉 콘텐츠 중심 성장</div></div>
-    <div class="metric-card"><div class="metric-num" data-count="2.2" data-suffix="만">약 2.2만</div><div class="metric-label">Instagram 성장</div><div class="metric-sub">3주 만에 팔로워 성장 경험</div></div>
-    <div class="metric-card"><div class="metric-num" data-count="664" data-suffix="만회">664만회</div><div class="metric-label">대표 릴스 최고 조회수</div><div class="metric-sub">냥정주 콘텐츠 최고 성과</div></div>
-    <div class="metric-card"><div class="metric-num" data-count="10" data-suffix="만 구독자">10만 구독자</div><div class="metric-label">YouTube 채널 경험</div><div class="metric-sub">우피터 채널 운영 경험</div></div>
-    <div class="metric-card"><div class="metric-num" data-count="6" data-suffix="년">6년</div><div class="metric-label">DIA TV 파트너</div><div class="metric-sub">2019~2025 파트너 크리에이터 활동</div></div>
+    <div class="metric-card"><div class="metric-num" data-count="0" data-prefix="₩" data-suffix="">₩0</div><div class="metric-label">오가닉 성장</div><div class="metric-sub">유료 광고 없이 검증한 콘텐츠 반응과 시청자 행동 데이터</div></div>
+    <div class="metric-card"><div class="metric-num" data-count="2.2" data-suffix="만">약 2.2만</div><div class="metric-label">Instagram 성장</div><div class="metric-sub">약 3주 만에 팔로워 성장 / 숏폼 포맷 검증 경험</div></div>
+    <div class="metric-card"><div class="metric-num" data-count="664" data-suffix="만회">664만회</div><div class="metric-label">대표 릴스 성과</div><div class="metric-sub">오가닉 반응을 만든 소재·훅 설계</div></div>
+    <div class="metric-card"><div class="metric-num" data-count="10" data-suffix="만 구독자">10만 구독자</div><div class="metric-label">YouTube 채널 경험</div><div class="metric-sub">채널 운영 및 콘텐츠 브랜드화 경험</div></div>
+    <div class="metric-card"><div class="metric-num" data-count="6" data-suffix="년">6년</div><div class="metric-label">DIA TV 파트너</div><div class="metric-sub">CJ ENM 산하 파트너 크리에이터 활동 / 외부 파트너십 경험</div></div>
   </div>
 </section>
 
 <section class="section" id="summary">
   <div class="section-tag">PROFESSIONAL SUMMARY</div>
-  <h2>시청자가 멈추는 지점을 찾아<br>콘텐츠 성과로 연결해왔습니다</h2>
-  <p class="section-sub">YouTube와 Instagram에서 직접 콘텐츠를 기획하고 운영하며 조회수, 팔로워 성장, 팬덤 반응을 만들어왔습니다. 현재는 그 경험을 바탕으로 브랜드 계정의 콘텐츠 기획, 소재 제작, SNS 운영, 실행 리포팅까지 담당하며 개인 채널 성장 경험을 콘텐츠 마케팅 실무로 확장하고 있습니다.</p>
+  <h2>성과를 낸 방식을<br>업무 프로세스로 번역합니다</h2>
+  <p class="section-sub">YouTube와 Instagram에서 직접 콘텐츠를 기획하고 운영하며 조회수, 팔로워 성장, 팬덤 반응을 만들었습니다. 현재는 북적북적 마케팅팀 팀장으로 레이크힐 호텔과 킹랩73 계정의 콘텐츠 기획, 소재 제작, SNS 운영, 내부 커뮤니케이션, 일정 관리, 실행 리포팅을 담당하며 개인 활동에서 검증한 실험 방식을 브랜드 운영으로 확장하고 있습니다.</p>
   <div class="grid-3">
     <div class="card">
       <div class="card-kicker">Growth</div>
-      <div class="card-title">오가닉 성장 경험</div>
+      <div class="card-title">반응을 만든 경험</div>
       <div class="card-text">광고비에 의존하지 않고 소재, 후킹, 편집, 업로드 흐름을 조정하며 YouTube 10만 구독자와 Instagram 단기 팔로워 성장을 만들었습니다.</div>
     </div>
     <div class="card">
       <div class="card-kicker">Content Strategy</div>
-      <div class="card-title">반응 변수를 찾는 기획력</div>
-      <div class="card-text">자전적 서사, 반려동물 숏폼, 축구 팬덤, 게임 협업 콘텐츠까지 서로 다른 카테고리에서 사람들이 반응하는 상수와 새롭게 멈추는 변수를 찾아 콘텐츠로 설계했습니다.</div>
+      <div class="card-title">재현 가능한 포맷 설계</div>
+      <div class="card-text">자전적 서사, 반려동물 숏폼, 축구 팬덤, 게임 협업 콘텐츠까지 서로 다른 카테고리에서 사람들이 반응하는 상수와 변수를 찾아 포맷으로 정리했습니다.</div>
     </div>
     <div class="card">
       <div class="card-kicker">Brand Operation</div>
-      <div class="card-title">브랜드 계정 운영 역량</div>
-      <div class="card-text">현재는 북적북적 마케팅팀 팀장으로서 레이크힐 호텔과 킹랩73 계정 운영을 지휘하며, 개인 채널에서 검증한 반응 설계를 브랜드 운영에 적용하고 있습니다.</div>
+      <div class="card-title">팀 운영으로의 확장</div>
+      <div class="card-text">목표 합의, 일정 공유, 브랜드 톤 검수, 성과 리포팅을 통해 개인 활동의 실험 방식을 팀이 다시 쓸 수 있는 운영 흐름으로 바꿉니다.</div>
     </div>
   </div>
 </section>
 
-<section class="section" id="contribution">
-  <div class="section-tag">SELECTED ACHIEVEMENTS</div>
-  <h2>대표 성과 사례</h2>
-  <p class="section-sub">각 사례는 단순한 업로드 기록이 아니라, 시청자가 반응하는 변수를 발견하고 콘텐츠 구조로 바꿔 실제 성과까지 연결한 경험입니다. 개인 채널 성장, 팬덤형 콘텐츠, 브랜드 협업, 브랜드 SNS 운영까지 콘텐츠 마케터 직무와 직접 연결되는 사례를 중심으로 정리했습니다.</p>
+<section class="section" id="method">
+  <div class="section-tag">ORGANIZATION READY</div>
+  <h2>개인 성과를 팀이 반복할 수 있는<br>운영 방식으로 번역합니다</h2>
+  <p class="section-sub">혼자 빠르게 실험한 경험을 회사에서는 목표 합의, 일정 공유, 브랜드 톤 검수, 성과 리포팅의 형태로 정리해 사용합니다.</p>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-kicker">01</div>
+      <div class="card-title">목표 합의</div>
+      <div class="card-text">캠페인 목적, 타깃, 채널 역할, CTA를 먼저 맞춰 콘텐츠의 방향을 정합니다.</div>
+    </div>
+    <div class="card">
+      <div class="card-kicker">02</div>
+      <div class="card-title">일정·역할 정리</div>
+      <div class="card-text">소재 후보, 제작 일정, 발행 일정, 담당 역할을 한눈에 보이게 정리합니다.</div>
+    </div>
+    <div class="card">
+      <div class="card-kicker">03</div>
+      <div class="card-title">브랜드 톤·승인</div>
+      <div class="card-text">개인 감각보다 브랜드 톤, 메시지 우선순위, 승인 기준을 먼저 반영합니다.</div>
+    </div>
+    <div class="card">
+      <div class="card-kicker">04</div>
+      <div class="card-title">성과 리포팅</div>
+      <div class="card-text">조회, 저장, 댓글, 클릭, 전환 흐름을 확인하고 다음 액션으로 정리합니다.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-tag">CURRENT ROLE</div>
+  <h2>개인 콘텐츠 감각을<br>인하우스 SNS 운영과 팀 프로세스로 확장했습니다</h2>
+  <p class="section-sub">현재 인하우스 마케팅팀 팀장으로 레이크힐 호텔과 킹랩73 계정의 콘텐츠 기획, 소재 제작, SNS 운영, 내부 커뮤니케이션, 일정 관리, 실행 리포팅을 담당하고 있습니다.</p>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-kicker">01</div>
+      <div class="card-title">운영 범위</div>
+      <div class="card-text">채널 톤 정리, 콘텐츠 소재 기획, 제작·발행 관리까지 브랜드 계정 운영 흐름을 관리합니다.</div>
+    </div>
+    <div class="card">
+      <div class="card-kicker">02</div>
+      <div class="card-title">협업 방식</div>
+      <div class="card-text">요청사항, 일정, 승인 포인트, 담당 역할을 정리해 내부 커뮤니케이션의 기준을 맞춥니다.</div>
+    </div>
+    <div class="card">
+      <div class="card-kicker">03</div>
+      <div class="card-title">리포팅</div>
+      <div class="card-text">성과와 반응을 다음 소재·포맷 실험으로 연결해 실행이 한 번에 끝나지 않게 만듭니다.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="cases">
+  <div class="section-tag">SELECTED CASES</div>
+  <h2>성과 사례를<br>팀의 실행 방식으로 해석했습니다</h2>
+  <p class="section-sub">각 사례는 단순한 조회수 기록이 아니라, 시청자가 반응하는 변수를 발견하고 콘텐츠 구조로 바꿔 실제 성과까지 연결한 경험입니다. 아래에는 그 경험을 브랜드와 팀이 어떻게 다시 쓸 수 있는지까지 함께 정리했습니다.</p>
   <div class="project-grid">
     <div class="project-card">
       <div class="project-title">냥정주 · 반려동물 숏폼 성장</div>
@@ -156,6 +217,10 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
       <div class="result-box">
         <div class="result-label">성과</div>
         <div class="result-text">약 3주 만에 Instagram 팔로워 약 2.2만 명 성장. 최고 조회수 664만회를 포함해 249만회, 212만회, 178만회, 133만회, 117만회, 101만회, 100만회 등 산고양이 시리즈 대표 콘텐츠가 반복적으로 고조회수를 만들었습니다.</div>
+      </div>
+      <div class="result-box">
+        <div class="result-label">TEAM PLAYBOOK</div>
+        <div class="result-text">반응이 나온 소재를 한 번의 운으로 끝내지 않고, 후속 포맷·시리즈·콘텐츠 캘린더로 전환해 팀이 반복 실행할 수 있게 만듭니다.</div>
       </div>
       <div class="project-outcome">
         <span class="pill">최고 <strong>664만회</strong></span>
@@ -172,6 +237,10 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
         <div class="result-label">성과</div>
         <div class="result-text">공개 페이지 기준, @0uts1de_J 채널에서 “3달안에 35KG...” 13만회, “인생이 최악의 상황...” 9.5만회, “72시간안에 감자 한 개를 팔아서 얼마까지 만들 수 있을까?” 9.1천회 등 자전적 실험형 콘텐츠가 2030 청년들의 니치를 정확히 공략했습니다.</div>
       </div>
+      <div class="result-box">
+        <div class="result-label">TEAM PLAYBOOK</div>
+        <div class="result-text">개인의 서사를 그대로 드러내는 것이 아니라, 타깃이 공감할 수 있는 감정 변수를 찾아 브랜드 톤 안에서 포맷화합니다.</div>
+      </div>
       <div class="project-outcome">
         <span class="pill"><strong>13만회</strong> 감량 콘텐츠</span>
         <span class="pill"><strong>9.5만회</strong> 인생 실험</span>
@@ -185,6 +254,10 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
       <div class="result-box">
         <div class="result-label">성과</div>
         <div class="result-text">우피터 채널로 10만 구독자 유튜브 경험을 만들었고, CJ ENM 산하 DIA TV 파트너 크리에이터 네트워크에서 6년 활동했습니다. 2022년 한국 스포츠/엔터테인먼트 분야 종합지표 6위를 달성하며, 축구 팬덤의 몰입 구조를 하나의 콘텐츠 브랜드로 만든 사례입니다. (출처 : Nox influencer)</div>
+      </div>
+      <div class="result-box">
+        <div class="result-label">TEAM PLAYBOOK</div>
+        <div class="result-text">팬덤이 이미 가진 감정 언어를 읽고, 브랜드/IP 메시지를 그 언어로 번역해 채널 자산으로 만듭니다.</div>
       </div>
       <div class="project-outcome">
         <span class="pill"><strong>10만 구독자</strong></span>
@@ -200,6 +273,10 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
         <div class="result-label">성과</div>
         <div class="result-text">제품 기능을 길게 설명하기보다 광고 당시 장면과 실제 유튜브 댓글 반응을 함께 제시해, 광고 메시지가 콘텐츠 흐름 안에서 자연스럽게 수용되도록 만들었습니다.</div>
       </div>
+      <div class="result-box">
+        <div class="result-label">TEAM PLAYBOOK</div>
+        <div class="result-text">광고 메시지를 시청자가 피하지 않는 콘텐츠 흐름 안에 배치하고, 협업 목적·시청자 반응·브랜드 노출의 균형을 맞춥니다.</div>
+      </div>
       <div class="project-outcome">
         <span class="pill">댓글 반응 기반 검증</span>
         <span class="pill">게임플레이 맥락형 노출</span>
@@ -208,10 +285,14 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
     <div class="project-card">
       <div class="project-title">북적북적 · 브랜드 계정 운영 지휘</div>
       <div class="project-meta">Brand SNS / Team Lead / Account Operation</div>
-      <div class="project-desc"><strong>설계</strong> : 현재 북적북적 마케팅팀 팀장으로 근무하며 레이크힐 호텔과 킹랩73 계정 운영을 지휘하고 있습니다. 개인 콘텐츠에서 검증한 후킹, 상황 설계, 시청자 관심 전환 방식을 호텔·외식 브랜드의 상품 특성과 연결했습니다.</div>
+      <div class="project-desc"><strong>역할</strong> : 현재 인하우스 마케팅팀 팀장으로 레이크힐 호텔과 킹랩73 계정의 콘텐츠 기획, 소재 제작, SNS 운영, 내부 커뮤니케이션, 일정 관리, 실행 리포팅을 담당하고 있습니다.</div>
       <div class="result-box">
         <div class="result-label">성과</div>
-        <div class="result-text">콘텐츠 기획, 소재 제작, SNS/마케팅 운영, 내부 커뮤니케이션, 일정 관리, 실행 리포팅까지 운영 흐름을 직접 관리하며 브랜드 계정의 콘텐츠 체계를 구축하고 있습니다.</div>
+        <div class="result-text">개인 콘텐츠에서 검증한 후킹·상황 설계 감각을 실제 브랜드 계정 운영으로 확장하고 있습니다.</div>
+      </div>
+      <div class="result-box">
+        <div class="result-label">TEAM PLAYBOOK</div>
+        <div class="result-text">회사 안에서는 좋은 아이디어보다 목표 합의, 일정 준수, 이해관계자 커뮤니케이션, 리포팅을 통해 다음 실행으로 연결되는 구조가 중요하다는 것을 체득했습니다.</div>
       </div>
       <div class="project-outcome">
         <span class="pill">레이크힐 호텔</span>
@@ -225,7 +306,7 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
 <section class="section" id="history">
   <div class="section-tag">CAREER HISTORY</div>
   <h2>활동 이력</h2>
-  <p class="section-sub">주요 공헌 사례를 보조하는 활동 이력입니다. 정렬 기준은 단순 시간순이 아니라, 콘텐츠 마케터 직무와 연결되는 실행 경험입니다.</p>
+  <p class="section-sub">주요 성과 사례를 보조하는 활동 이력입니다. 정렬 기준은 단순 시간순이 아니라, 콘텐츠 마케터 직무와 연결되는 실행 경험과 조직 안에서 재현 가능한 운영 경험입니다.</p>
   <div class="timeline">
     <div class="timeline-line"></div>
     <div class="timeline-item">
@@ -235,9 +316,14 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
       <div class="timeline-role">
         <span class="role-pill">브랜드 SNS 운영</span>
         <span class="role-pill">콘텐츠 기획</span>
-        <span class="role-pill">운영 지휘</span>
+        <span class="role-pill">일정·리포팅</span>
       </div>
-      <div class="timeline-detail">현재 북적북적 마케팅팀 팀장으로 근무하며 레이크힐 호텔과 킹랩73의 콘텐츠 기획부터 계정 운영, 소재 제작, 일정 관리, 실행 리포팅까지 담당합니다. 레이크힐 호텔과 킹랩73 계정 운영을 지휘하며, 개인 콘텐츠에서 검증한 후킹과 상황 설계 방식을 브랜드 운영에 적용하고 있습니다.</div>
+      <div class="timeline-detail">현재 북적북적 마케팅팀 팀장으로 근무하며 레이크힐 호텔과 킹랩73의 콘텐츠 기획, 소재 제작, SNS 운영, 내부 커뮤니케이션, 일정 관리, 실행 리포팅을 담당합니다. 레이크힐 호텔과 킹랩73 계정 운영을 지휘하며, 개인 활동에서 검증한 후킹과 상황 설계 방식을 브랜드 운영에 적용하고 있습니다.</div>
+      <div class="grid-3" style="margin-top:16px;">
+        <div class="result-box" style="margin-top:0;"><div class="result-label">운영 범위</div><div class="result-text">채널 톤 정리, 콘텐츠 소재 기획, 제작·발행 관리</div></div>
+        <div class="result-box" style="margin-top:0;"><div class="result-label">협업 방식</div><div class="result-text">요청사항, 일정, 승인 포인트, 담당 역할을 정리해 공유</div></div>
+        <div class="result-box" style="margin-top:0;"><div class="result-label">리포팅</div><div class="result-text">성과와 반응을 다음 소재·포맷 실험으로 연결</div></div>
+      </div>
     </div>
     <div class="timeline-item">
       <div class="timeline-dot">02</div>
@@ -248,7 +334,7 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
         <span class="role-pill">축구·게임 콘텐츠</span>
         <span class="role-pill">공식 파트너 크리에이터 활동</span>
       </div>
-      <div class="timeline-detail">우피터 채널을 통해 국가대표와 축구 팬덤의 몰입 구조, 손흥민 선수라는 대중적 변수를 결합해 반복 소비되는 축구 콘텐츠 브랜드를 만들었습니다. CJ ENM 산하 DIA TV 파트너 크리에이터 활동을 통해 플랫폼과 시청자 신뢰 구조를 직접 경험했습니다.</div>
+      <div class="timeline-detail">우피터 채널을 통해 국가대표와 축구 팬덤의 몰입 구조, 손흥민 선수라는 대중적 변수를 결합해 반복 소비되는 축구 콘텐츠 브랜드를 만들었습니다. CJ ENM 산하 DIA TV 파트너 크리에이터 활동을 통해 외부 파트너십 기반의 채널 운영과 플랫폼 신뢰 구조를 직접 경험했습니다.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-dot">03</div>
@@ -259,7 +345,7 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
         <span class="role-pill">서비스 홍보</span>
         <span class="role-pill">사용 경험 전달</span>
       </div>
-      <div class="timeline-detail">카카오 자체 개발 AI 서비스인 카나나429를 홍보하는 앰버서더로 활동했습니다. AI 캠퍼스 밋업과 공식 활동을 통해 서비스의 메시지와 사용 경험을 콘텐츠 관점에서 전달하는 역할을 맡았습니다.</div>
+      <div class="timeline-detail">카카오 자체 개발 AI 서비스인 카나나429를 홍보하는 앰버서더로 활동했습니다. 공식 캠페인 가이드와 서비스 메시지 안에서 사용자 언어로 콘텐츠를 전달하는 역할을 맡았습니다.</div>
     </div>
     <div class="timeline-item">
       <div class="timeline-dot">04</div>
@@ -270,7 +356,7 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
         <span class="role-pill">베타테스터</span>
         <span class="role-pill">생성형 AI 초기 경험</span>
       </div>
-      <div class="timeline-detail">GPT-3.5 series 기반 ChatGPT research preview 베타테스터로 활동했습니다. 초기 생성형 AI 서비스의 사용자 경험을 직접 탐색하며, 프롬프트 입력 방식과 대화형 인터페이스가 콘텐츠 제작 흐름에 미치는 변화를 빠르게 경험했습니다.</div>
+      <div class="timeline-detail">GPT-3.5 series 기반 ChatGPT research preview 베타테스터로 활동했습니다. 생성형 AI 서비스의 초기 사용자 경험을 직접 테스트하며, 콘텐츠 제작 흐름과 대화형 인터페이스가 사용자 행동에 미치는 변화를 빠르게 관찰했습니다.</div>
     </div>
   </div>
 </section>
@@ -278,23 +364,74 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
 <section class="section-dark" id="strength">
   <div class="inner">
     <div class="section-tag" style="background:rgba(255,255,255,.08);color:#F05A8C;">WHY I'M DIFFERENT</div>
-    <h2 style="color:#fff;">기획부터 실행까지 전부 해본 사람이<br>마케팅을 하면 이렇게 다릅니다</h2>
+    <h2 style="color:#fff;">기획부터 실행까지 이해한 사람이<br>팀 안에서 만드는 차이</h2>
+    <p style="color:#aaa;font-size:16px;line-height:1.7;max-width:760px;margin-top:12px;">숫자를 보고, 바로 만들고, 반복되는 일을 시스템으로 바꿔 팀이 함께 실행할 수 있게 합니다.</p>
     <div class="dark-grid">
       <div class="dark-card">
         <div class="dark-index">01</div>
-        <div class="dark-title">데이터를 직접 봅니다</div>
-        <div class="dark-desc">감으로 기획하지 않습니다. 내부 데이터를 직접 조회하고 분석해 기획의 근거를 만듭니다. 릴스 썸네일도 A/B 테스트하듯 변경하며 어떤 요소가 반응을 만드는지 검증합니다.</div>
+        <div class="dark-title">공유 가능한 근거로 기획합니다</div>
+        <div class="dark-desc">감으로 기획하지 않습니다. 채널 데이터, 댓글, 저장, 조회 흐름을 확인하고 팀이 이해할 수 있는 근거로 정리해 기획합니다.</div>
       </div>
       <div class="dark-card">
         <div class="dark-index">02</div>
-        <div class="dark-title">만들고자 하면 바로 만듭니다</div>
-        <div class="dark-desc">기획서만 작성하고 끝내지 않습니다. 디자인, 랜딩페이지, 자동화 도구까지 필요하다면 직접 만들어 실행까지 가져갑니다.</div>
+        <div class="dark-title">합의된 범위 안에서 빠르게 구현합니다</div>
+        <div class="dark-desc">기획서에서 끝내지 않고, 브랜드 톤과 목표가 합의된 범위 안에서 빠르게 시안과 실행물로 연결합니다.</div>
       </div>
       <div class="dark-card">
         <div class="dark-index">03</div>
-        <div class="dark-title">반복 작업의 비효율성을 지양합니다</div>
-        <div class="dark-desc">같은 일을 반복하게 되면 자동화 가능성을 먼저 검토합니다. 상수에서 찾는 일상 소재, 바이럴이 될 수 있는 변수, 상수와 변수를 연결하는 파이프라인까지 시스템화해 기획에 집중합니다.</div>
+        <div class="dark-title">반복 업무를 템플릿화합니다</div>
+        <div class="dark-desc">반복되는 소재 탐색, 발행, 리포팅 과정을 구조화해 팀의 시간을 줄이고 다음 실험에 집중할 수 있게 만듭니다.</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-tag">CONTENT SYSTEM</div>
+  <h2>콘텐츠 변수를 운영하는 방식</h2>
+  <p class="section-sub">계정마다 다른 상수를 먼저 보고, 그 위에 성과를 바꿀 변수를 얹어 콘텐츠 브랜드로 만듭니다. 이 과정은 가설, 제작, 발행, 지표 확인, 인사이트 공유, 다음 실험의 루프로 운영됩니다.</p>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-kicker">01</div>
+      <div class="card-title">Empathy Variable</div>
+      <div class="card-text">타깃이 자기 이야기로 받아들일 수 있는 감정 변수를 정의하고, 브랜드 톤 안에서 표현합니다.</div>
+    </div>
+    <div class="card">
+      <div class="card-kicker">02</div>
+      <div class="card-title">Curiosity Variable</div>
+      <div class="card-text">첫 1초, 상황, 훅을 시리즈화 가능한 포맷으로 정리해 반복 실험합니다.</div>
+    </div>
+    <div class="card">
+      <div class="card-kicker">03</div>
+      <div class="card-title">Fan Immersion Variable</div>
+      <div class="card-text">팬덤이 이미 쓰는 감정 언어와 브랜드 메시지를 연결해 몰입 가능한 콘텐츠 룰로 남깁니다.</div>
+    </div>
+  </div>
+  <div class="result-box" style="margin-top:18px;">
+    <div class="result-label">OPERATING LOOP</div>
+    <div class="result-text">가설 설정 → 제작 → 발행 → 지표 확인 → 인사이트 공유 → 다음 실험</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-tag">WORKING STYLE</div>
+  <h2>새로운 브랜드를 맡을 때는<br>맥락을 먼저 읽고 작게 검증합니다</h2>
+  <p class="section-sub">성과가 났던 방식을 그대로 밀어붙이지 않습니다. 브랜드가 이미 가진 톤, 고객, 승인 기준, 팀의 일하는 방식을 먼저 이해한 뒤 작은 실험으로 확인하고, 다음 사람이 이어서 쓸 수 있는 형태로 남깁니다.</p>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-kicker">01</div>
+      <div class="card-title">Context First</div>
+      <div class="card-text">브랜드 톤, 기존 채널, 타깃, 내부 승인 방식, 리포팅 기준을 먼저 파악합니다.</div>
+    </div>
+    <div class="card">
+      <div class="card-kicker">02</div>
+      <div class="card-title">Small Test</div>
+      <div class="card-text">기존 콘텐츠 반응을 바탕으로 작은 포맷 실험을 제안하고 제작·발행 흐름에 맞춰 실행합니다.</div>
+    </div>
+    <div class="card">
+      <div class="card-kicker">03</div>
+      <div class="card-title">Reusable System</div>
+      <div class="card-text">성과가 나온 포맷을 콘텐츠 캘린더, 리포트, 다음 실행안으로 정리해 반복 가능한 운영 구조로 남깁니다.</div>
     </div>
   </div>
 </section>
@@ -318,8 +455,8 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
 </section>
 
 <footer class="footer">
-  <h2>반응의 변수를 찾아<br><span>결과로 검증합니다</span></h2>
-  <p>조회수는 우연히 발생한 숫자가 아니라, 멈추게 하는 첫 장면과 반응하게 하는 감정, 공유하고 싶게 만드는 상황 설계의 결과라고 생각합니다.<br>저는 그 변수를 직접 찾고 콘텐츠로 구현해온 콘텐츠 마케터입니다.</p>
+  <h2>조회수를 우연히 만든 사람이 아니라<br><span>반복 가능한 구조로 전환하는 사람입니다</span></h2>
+  <p>저는 사람들이 왜 멈추고, 보고, 팔로우하는지를 직접 실험해온 콘텐츠 마케터입니다.<br>이제 그 경험을 브랜드와 팀이 반복해서 쓸 수 있는 콘텐츠 운영 구조로 전환하겠습니다.</p>
 </footer>
 
 <script>

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Cache-Control" content="no-store">
+  <title>Jungju Portfolio Downloads</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #111318;
+      --muted: #6b7280;
+      --line: #e8e8ee;
+      --soft: #f7f7fa;
+      --accent: #a0194f;
+      --accent-2: #d9366d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", system-ui, sans-serif;
+      background: #fff;
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 56px;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .08em;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 7vw, 56px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      margin: 18px 0 32px;
+      color: #4b5563;
+      font-size: 17px;
+    }
+
+    .notice {
+      margin: 0 0 22px;
+      padding: 14px 16px;
+      border: 1px solid #f0d6df;
+      border-radius: 10px;
+      background: #fff5f8;
+      color: #7a1239;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .file {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--soft);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .file strong {
+      display: block;
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    .file span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .badge {
+      flex: 0 0 auto;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #fff;
+      padding: 8px 12px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .primary {
+      border-color: #efbfd1;
+      background: #fff8fb;
+    }
+
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">DOWNLOADS</p>
+    <h1>정주 콘텐츠 마케팅 자료</h1>
+    <p class="lead">모바일에서 바로 받을 수 있도록 파일을 GitHub Pages에 올려두었습니다. 전체 파일이 필요하면 첫 번째 ZIP을 받으면 됩니다.</p>
+    <p class="notice">휴대폰에서 ZIP이 바로 열리지 않으면 PDF 파일을 개별로 내려받아 주세요.</p>
+
+    <section class="grid" aria-label="download files">
+      <a class="file primary" href="./downloads/jungju-content-marketing-all-files.zip?v=202606240946" download>
+        <div>
+          <strong>전체 자료 ZIP</strong>
+          <span>포트폴리오, 경력기술서, 이력서 PDF 포함</span>
+        </div>
+        <span class="badge">25MB</span>
+      </a>
+
+      <a class="file" href="./downloads/jungju-content-marketing-portfolio.pdf?v=202606240946" download>
+        <div>
+          <strong>포트폴리오 PDF</strong>
+          <span>제출용 PDF</span>
+        </div>
+        <span class="badge">PDF</span>
+      </a>
+
+      <a class="file" href="./downloads/jungju-career-statement.pdf?v=202606240946" download>
+        <div>
+          <strong>경력기술서 PDF</strong>
+          <span>제출용 PDF</span>
+        </div>
+        <span class="badge">PDF</span>
+      </a>
+
+      <a class="file" href="./downloads/jungju-resume-remember-upload.pdf?v=202606240946" download>
+        <div>
+          <strong>이력서 PDF</strong>
+          <span>리멤버 업로드 우선 추천 버전</span>
+        </div>
+        <span class="badge">PDF</span>
+      </a>
+
+      <a class="file" href="./downloads/jungju-resume-image-fallback.pdf?v=202606240946" download>
+        <div>
+          <strong>이력서 PDF 이미지 변환본</strong>
+          <span>업로드가 계속 막힐 때 쓰는 fallback 버전</span>
+        </div>
+        <span class="badge">PDF</span>
+      </a>
+
+      <a class="file" href="./downloads/jungju-content-marketing-portfolio.html?v=202606240946" download>
+        <div>
+          <strong>포트폴리오 HTML</strong>
+          <span>원본 HTML 파일</span>
+        </div>
+        <span class="badge">HTML</span>
+      </a>
+
+      <a class="file" href="./downloads/jungju-career-statement.html?v=202606240946" download>
+        <div>
+          <strong>경력기술서 HTML</strong>
+          <span>원본 HTML 파일</span>
+        </div>
+        <span class="badge">HTML</span>
+      </a>
+    </section>
+
+    <footer>
+      <p>iPhone Safari에서는 링크를 길게 눌러 파일 다운로드 또는 파일에 저장을 선택하면 안정적입니다.</p>
+    </footer>
+  </main>
+</body>
+</html>

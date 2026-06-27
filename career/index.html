@@ -81,6 +81,10 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
 .dark-index{font-size:12px;font-weight:800;color:#F05A8C;margin-bottom:12px}
 .dark-title{font-size:18px;font-weight:800;color:#fff;margin-bottom:10px}
 .dark-desc{font-size:14px;color:#aaa;line-height:1.72}
+.business-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:28px}
+.business-num{font-size:34px;font-weight:800;color:#F05A8C;line-height:1.05;font-variant-numeric:tabular-nums;margin-bottom:8px}
+.business-label{font-size:15px;font-weight:800;color:#fff;margin-bottom:8px}
+.business-text{font-size:14px;color:#aaa;line-height:1.72}
 .skill-wrap{display:flex;flex-wrap:wrap;gap:12px}
 .skill-tag{padding:9px 18px;background:#fff;border-radius:100px;font-size:13px;font-weight:600;color:#444;border:1px solid #ddd}
 .footer{padding:76px 24px;background:#0a0a0a;color:#f5f5f5;text-align:center}
@@ -94,10 +98,12 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
   .nav{padding:14px 24px}.nav-links{display:none}
   .hero h1{font-size:30px}.hero p{font-size:16px}
   .section h2{font-size:25px}
-  .grid-2,.grid-3,.project-grid,.dark-grid{grid-template-columns:1fr}
+  .grid-2,.grid-3,.project-grid,.dark-grid,.business-grid{grid-template-columns:1fr}
   .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .metric-card{padding:20px 16px}
+  .metric-num{font-size:26px;line-height:1.1}
 }
-@media(min-width:900px){.metrics{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(min-width:900px){.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media print{
   body{background:#fff;color:#111}
   .nav{position:static;border-bottom:1px solid #eee}
@@ -121,11 +127,12 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
 <section class="hero">
   <div class="hero-tag fade-up">CAREER STATEMENT</div>
   <h1 class="fade-d1">변수를 설계해<br><span>팀이 반복할 수 있는</span><br>결과로 남깁니다</h1>
-  <p class="fade-d2">스포츠 기반 YouTube 10만 구독자 채널, Instagram 3주 만에 약 2.2만 팔로워 성장, 대표 릴스 100만+ 다수의 성과를 만들었습니다.<br>개인 활동에서 검증한 콘텐츠 실험 방식을 팀의 목표, 브랜드 톤, 일정, 승인, 리포팅 안에서 재현 가능한 운영 구조로 전환해왔습니다.<br><br>콘텐츠를 감각에만 맡기지 않았습니다. 타깃, 소재, 첫 1초, 감정, 전환 변수를 설계하고 결과를 지표로 확인해 다음 실행으로 연결했습니다.</p>
+  <p class="fade-d2">스포츠 기반 YouTube 10만 구독자 채널, Instagram 3주 만에 약 2.2만 팔로워 성장, 고양이 콘텐츠 기반 선예약 응답 234개 확보, FIFA22 광고 캠페인 연계까지 경험했습니다.<br>개인 활동에서 검증한 콘텐츠 실험 방식을 팀의 목표, 브랜드 톤, 일정, 승인, 리포팅 안에서 재현 가능한 운영 구조로 전환해왔습니다.<br><br>콘텐츠를 감각에만 맡기지 않았습니다. 타깃, 소재, 첫 1초, 감정, 전환 변수를 설계하고 결과를 지표로 확인해 다음 실행과 실제 비즈니스 기회로 연결했습니다.</p>
   <div class="metrics fade-d3">
     <div class="metric-card"><div class="metric-num" data-count="0" data-prefix="₩" data-suffix="">₩0</div><div class="metric-label">오가닉 성장</div><div class="metric-sub">유료 광고 없이 검증한 콘텐츠 반응과 시청자 행동 데이터</div></div>
     <div class="metric-card"><div class="metric-num" data-count="2.2" data-suffix="만">약 2.2만</div><div class="metric-label">Instagram 성장</div><div class="metric-sub">약 3주 만에 팔로워 성장 / 숏폼 포맷 검증 경험</div></div>
     <div class="metric-card"><div class="metric-num" data-count="664" data-suffix="만회">664만회</div><div class="metric-label">대표 릴스 성과</div><div class="metric-sub">오가닉 반응을 만든 소재·훅 설계</div></div>
+    <div class="metric-card"><div class="metric-num" data-count="234" data-suffix="개">234개</div><div class="metric-label">예약 수요 전환</div><div class="metric-sub">고양이 콘텐츠 유입 기반 / 2일 만에 선예약 응답 확보</div></div>
     <div class="metric-card"><div class="metric-num" data-count="10" data-suffix="만 구독자">10만 구독자</div><div class="metric-label">YouTube 채널 경험</div><div class="metric-sub">채널 운영 및 콘텐츠 브랜드화 경험</div></div>
     <div class="metric-card"><div class="metric-num" data-count="6" data-suffix="년">6년</div><div class="metric-label">DIA TV 파트너</div><div class="metric-sub">CJ ENM 산하 파트너 크리에이터 활동 / 외부 파트너십 경험</div></div>
   </div>
@@ -134,12 +141,12 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
 <section class="section" id="summary">
   <div class="section-tag">PROFESSIONAL SUMMARY</div>
   <h2>성과를 낸 방식을<br>업무 프로세스로 번역합니다</h2>
-  <p class="section-sub">YouTube와 Instagram에서 직접 콘텐츠를 기획하고 운영하며 조회수, 팔로워 성장, 팬덤 반응을 만들었습니다. 현재는 북적북적 마케팅팀 팀장으로 레이크힐 호텔과 킹랩73 계정의 콘텐츠 기획, 소재 제작, SNS 운영, 내부 커뮤니케이션, 일정 관리, 실행 리포팅을 담당하며 개인 활동에서 검증한 실험 방식을 브랜드 운영으로 확장하고 있습니다.</p>
+  <p class="section-sub">YouTube와 Instagram에서 직접 콘텐츠를 기획하고 운영하며 조회수, 팔로워 성장, 팬덤 반응을 만들었습니다. 나아가 고양이 콘텐츠의 바이럴 반응을 선예약 응답 234개로 연결하고, 스포츠 팬덤 채널 운영 성과를 FIFA22 광고 캠페인으로 확장했습니다. 현재는 북적북적 마케팅팀 팀장으로 레이크힐 호텔과 킹랩73 계정의 콘텐츠 기획, 소재 제작, SNS 운영, 내부 커뮤니케이션, 일정 관리, 실행 리포팅을 담당하며 개인 활동에서 검증한 실험 방식을 브랜드 운영으로 확장하고 있습니다.</p>
   <div class="grid-3">
     <div class="card">
       <div class="card-kicker">Growth</div>
       <div class="card-title">반응을 만든 경험</div>
-      <div class="card-text">광고비에 의존하지 않고 소재, 후킹, 편집, 업로드 흐름을 조정하며 YouTube 10만 구독자와 Instagram 단기 팔로워 성장을 만들었습니다.</div>
+      <div class="card-text">광고비에 의존하지 않고 소재, 후킹, 편집, 업로드 흐름을 조정하며 YouTube 10만 구독자와 Instagram 단기 팔로워 성장을 만들었습니다. 반응이 확인된 콘텐츠는 예약 문의와 캠페인 기회로 연결했습니다.</div>
     </div>
     <div class="card">
       <div class="card-kicker">Content Strategy</div>
@@ -148,8 +155,8 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
     </div>
     <div class="card">
       <div class="card-kicker">Brand Operation</div>
-      <div class="card-title">팀 운영으로의 확장</div>
-      <div class="card-text">목표 합의, 일정 공유, 브랜드 톤 검수, 성과 리포팅을 통해 개인 활동의 실험 방식을 팀이 다시 쓸 수 있는 운영 흐름으로 바꿉니다.</div>
+      <div class="card-title">비즈니스 전환으로의 확장</div>
+      <div class="card-text">목표 합의, 일정 공유, 브랜드 톤 검수, 성과 리포팅을 통해 개인 활동의 실험 방식을 팀이 다시 쓸 수 있는 운영 흐름과 실제 전환 데이터로 바꿉니다.</div>
     </div>
   </div>
 </section>
@@ -216,17 +223,21 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
       <div class="project-desc"><strong>설계</strong> : 반려동물이라는 보편적 상수에, “모르는 고양이가 집 안에 들어왔다”, “창문 앞에서 훔쳐본다”, “김치통에서 자다 걸렸다” 같은 특수 상황 변수를 결합했습니다. 첫 장면만으로 질문이 생기도록 후킹을 설계하고, 반복 가능한 시리즈 구조로 확장했습니다.</div>
       <div class="result-box">
         <div class="result-label">성과</div>
-        <div class="result-text">약 3주 만에 Instagram 팔로워 약 2.2만 명 성장. 최고 조회수 664만회를 포함해 249만회, 212만회, 178만회, 133만회, 117만회, 101만회, 100만회 등 산고양이 시리즈 대표 콘텐츠가 반복적으로 고조회수를 만들었습니다.</div>
+        <div class="result-text">약 3주 만에 Instagram 팔로워 약 2.2만 명 성장. 최고 조회수 664만회를 포함해 249만회, 212만회, 178만회, 133만회, 117만회, 101만회, 100만회 등 산고양이 시리즈 대표 콘텐츠가 반복적으로 고조회수를 만들었습니다. 이후 콘텐츠 반응을 선예약 폼으로 연결해 2일 만에 응답 234개를 확보했습니다.</div>
+      </div>
+      <div class="result-box">
+        <div class="result-label">BUSINESS CONVERSION</div>
+        <div class="result-text">Google Forms 응답 요약 기준, 선예약 응답 234개와 예약 의향군 89.3%를 확보했습니다. 조회수를 단순 노출 성과로 끝내지 않고 실제 예약 문의와 객실 수요 데이터로 전환한 사례입니다.</div>
       </div>
       <div class="result-box">
         <div class="result-label">TEAM PLAYBOOK</div>
-        <div class="result-text">반응이 나온 소재를 한 번의 운으로 끝내지 않고, 후속 포맷·시리즈·콘텐츠 캘린더로 전환해 팀이 반복 실행할 수 있게 만듭니다.</div>
+        <div class="result-text">반응이 나온 소재를 한 번의 운으로 끝내지 않고, 후속 포맷·시리즈·콘텐츠 캘린더와 예약 수요 검증 흐름으로 전환해 팀이 반복 실행할 수 있게 만듭니다.</div>
       </div>
       <div class="project-outcome">
         <span class="pill">최고 <strong>664만회</strong></span>
         <span class="pill"><strong>249만회</strong></span>
-        <span class="pill"><strong>212만회</strong></span>
-        <span class="pill"><strong>178만회</strong></span>
+        <span class="pill">선예약 <strong>234개</strong></span>
+        <span class="pill">예약 의향군 <strong>89.3%</strong></span>
       </div>
     </div>
     <div class="project-card">
@@ -256,13 +267,18 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
         <div class="result-text">우피터 채널로 10만 구독자 유튜브 경험을 만들었고, CJ ENM 산하 DIA TV 파트너 크리에이터 네트워크에서 6년 활동했습니다. 2022년 한국 스포츠/엔터테인먼트 분야 종합지표 6위를 달성하며, 축구 팬덤의 몰입 구조를 하나의 콘텐츠 브랜드로 만든 사례입니다. (출처 : Nox influencer)</div>
       </div>
       <div class="result-box">
+        <div class="result-label">CAMPAIGN VALUE</div>
+        <div class="result-text">스포츠 팬덤과 게임 시청자의 니즈를 이해한 채널 운영 성과는 FIFA22 X WPT 광고 캠페인 협업으로 이어졌습니다. 팬덤이 이미 반응하는 언어를 브랜드 메시지와 연결해 캠페인 집행 가능성을 만든 경험입니다.</div>
+      </div>
+      <div class="result-box">
         <div class="result-label">TEAM PLAYBOOK</div>
-        <div class="result-text">팬덤이 이미 가진 감정 언어를 읽고, 브랜드/IP 메시지를 그 언어로 번역해 채널 자산으로 만듭니다.</div>
+        <div class="result-text">팬덤이 이미 가진 감정 언어를 읽고, 브랜드/IP 메시지를 그 언어로 번역해 채널 자산과 캠페인 접점으로 만듭니다.</div>
       </div>
       <div class="project-outcome">
         <span class="pill"><strong>10만 구독자</strong></span>
         <span class="pill"><strong>6년</strong> DIA TV</span>
         <span class="pill"><strong>한국 6위</strong> Nox influencer</span>
+        <span class="pill">FIFA22 광고 캠페인 연계</span>
       </div>
     </div>
     <div class="project-card">
@@ -271,13 +287,14 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
       <div class="project-desc"><strong>설계</strong> : 광고를 별도 삽입물처럼 보이게 하기보다 시청자가 이미 보고 싶어 하는 축구 장면 안에서 자연스럽게 노출되도록 구성했습니다. FIFA 시리즈의 익숙한 비주얼 문법과 손흥민 중심 후킹을 콘텐츠 흐름 안에 배치했습니다.</div>
       <div class="result-box">
         <div class="result-label">성과</div>
-        <div class="result-text">제품 기능을 길게 설명하기보다 광고 당시 장면과 실제 유튜브 댓글 반응을 함께 제시해, 광고 메시지가 콘텐츠 흐름 안에서 자연스럽게 수용되도록 만들었습니다.</div>
+        <div class="result-text">스포츠 유튜브 운영으로 확보한 팬덤 이해와 채널 신뢰를 바탕으로 FIFA22 X WPT 광고 콘텐츠를 집행했습니다. 제품 기능을 길게 설명하기보다 광고 당시 장면과 실제 유튜브 댓글 반응을 함께 제시해, 광고 메시지가 콘텐츠 흐름 안에서 자연스럽게 수용되도록 만들었습니다.</div>
       </div>
       <div class="result-box">
         <div class="result-label">TEAM PLAYBOOK</div>
         <div class="result-text">광고 메시지를 시청자가 피하지 않는 콘텐츠 흐름 안에 배치하고, 협업 목적·시청자 반응·브랜드 노출의 균형을 맞춥니다.</div>
       </div>
       <div class="project-outcome">
+        <span class="pill">FIFA22 광고 캠페인</span>
         <span class="pill">댓글 반응 기반 검증</span>
         <span class="pill">게임플레이 맥락형 노출</span>
       </div>
@@ -288,7 +305,7 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
       <div class="project-desc"><strong>역할</strong> : 현재 인하우스 마케팅팀 팀장으로 레이크힐 호텔과 킹랩73 계정의 콘텐츠 기획, 소재 제작, SNS 운영, 내부 커뮤니케이션, 일정 관리, 실행 리포팅을 담당하고 있습니다.</div>
       <div class="result-box">
         <div class="result-label">성과</div>
-        <div class="result-text">개인 콘텐츠에서 검증한 후킹·상황 설계 감각을 실제 브랜드 계정 운영으로 확장하고 있습니다.</div>
+        <div class="result-text">개인 콘텐츠에서 검증한 후킹·상황 설계 감각을 실제 브랜드 계정 운영으로 확장하고 있습니다. 조회수와 팔로워뿐 아니라 예약 문의, 고객 니즈, 객실 수요처럼 매출로 이어질 수 있는 신호를 함께 확인합니다.</div>
       </div>
       <div class="result-box">
         <div class="result-label">TEAM PLAYBOOK</div>
@@ -298,6 +315,26 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
         <span class="pill">레이크힐 호텔</span>
         <span class="pill">킹랩73</span>
         <span class="pill">마케팅팀 팀장</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="inner">
+    <div class="section-tag" style="background:rgba(255,255,255,.08);color:#F05A8C;">BUSINESS IMPACT</div>
+    <h2 style="color:#fff;">콘텐츠 반응을<br>예약 수요와 캠페인 기회로 연결했습니다</h2>
+    <p style="color:#aaa;font-size:16px;line-height:1.7;max-width:760px;margin-top:12px;">조회수와 팔로워는 출발점으로 보고, 그 반응이 실제 브랜드에 어떤 수요와 기회를 만들 수 있는지까지 확인했습니다.</p>
+    <div class="business-grid">
+      <div class="dark-card">
+        <div class="business-num">234개</div>
+        <div class="business-label">고양이 콘텐츠 기반 선예약 응답 확보</div>
+        <div class="business-text">반려동물 숏폼에서 발생한 관심을 선예약 폼으로 연결해 2일 만에 응답 234개를 확보했습니다. 예약 의향군 89.3%, 주요 이용 인원 2~4인 92.7% 등 판매 판단에 필요한 수요 데이터를 함께 확인했습니다.</div>
+      </div>
+      <div class="dark-card">
+        <div class="business-num">FIFA22</div>
+        <div class="business-label">스포츠 팬덤 채널에서 광고 캠페인으로 확장</div>
+        <div class="business-text">우피터 채널 운영으로 검증한 축구 팬덤 몰입 구조를 바탕으로 FIFA22 X WPT 광고 콘텐츠를 집행했습니다. 브랜드 메시지를 팬들이 이미 소비하는 축구·게임 콘텐츠 흐름 안에 배치해 캠페인 접점을 만들었습니다.</div>
       </div>
     </div>
   </div>
@@ -389,7 +426,7 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
 <section class="section">
   <div class="section-tag">CONTENT SYSTEM</div>
   <h2>콘텐츠 변수를 운영하는 방식</h2>
-  <p class="section-sub">계정마다 다른 상수를 먼저 보고, 그 위에 성과를 바꿀 변수를 얹어 콘텐츠 브랜드로 만듭니다. 이 과정은 가설, 제작, 발행, 지표 확인, 인사이트 공유, 다음 실험의 루프로 운영됩니다.</p>
+  <p class="section-sub">계정마다 다른 상수를 먼저 보고, 그 위에 성과를 바꿀 변수를 얹어 콘텐츠 브랜드로 만듭니다. 이 과정은 가설, 제작, 발행, 지표 확인, 인사이트 공유, 다음 실험의 루프로 운영되며, 반응이 확인된 콘텐츠는 예약 문의·캠페인·매출 기회로 연결합니다.</p>
   <div class="grid-3">
     <div class="card">
       <div class="card-kicker">01</div>
@@ -455,8 +492,8 @@ body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;backgr
 </section>
 
 <footer class="footer">
-  <h2>조회수를 우연히 만든 사람이 아니라<br><span>반복 가능한 구조로 전환하는 사람입니다</span></h2>
-  <p>저는 사람들이 왜 멈추고, 보고, 팔로우하는지를 직접 실험해온 콘텐츠 마케터입니다.<br>이제 그 경험을 브랜드와 팀이 반복해서 쓸 수 있는 콘텐츠 운영 구조로 전환하겠습니다.</p>
+  <h2>조회수를 우연히 만든 사람이 아니라<br><span>반응을 비즈니스 기회로 전환하는 사람입니다</span></h2>
+  <p>저는 사람들이 왜 멈추고, 보고, 팔로우하는지를 직접 실험해온 콘텐츠 마케터입니다.<br>브랜드마다 다른 톤과 팬들의 니즈를 읽고, 그 반응을 팀이 반복해서 쓸 수 있는 콘텐츠 운영 구조와 실제 전환 데이터로 남기겠습니다.</p>
 </footer>
 
 <script>

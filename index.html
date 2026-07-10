@@ -39,11 +39,18 @@
 html{scroll-behavior:smooth}
 ::selection{background:#B21F5B;color:#fff}
 body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;background:#fafafa;color:#111;overflow-x:hidden;word-break:keep-all}
-:root{--page-max:1080px}
+:root{--page-max:1080px;--portfolio-switcher-h:38px}
 .mono{font-family:'JetBrains Mono',monospace}
 section{scroll-margin-top:76px}
 
-.nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:14px max(32px,calc((100vw - var(--page-max))/2 + 24px));display:flex;justify-content:space-between;align-items:center;transition:all .3s ease}
+.portfolio-switcher{position:fixed;top:0;left:0;right:0;z-index:140;height:var(--portfolio-switcher-h);display:flex;align-items:center;justify-content:center;padding:6px 16px;background:rgba(250,250,250,.92);backdrop-filter:blur(18px);border-bottom:1px solid rgba(0,0,0,.06)}
+.portfolio-switcher__inner{display:inline-flex;align-items:center;gap:4px;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:3px;background:rgba(255,255,255,.7);border:1px solid rgba(0,0,0,.06);border-radius:999px}
+.portfolio-switcher__inner::-webkit-scrollbar{display:none}
+.portfolio-switcher a{flex:0 0 auto;padding:5px 12px;border-radius:999px;color:#777;text-decoration:none;font-size:12px;font-weight:700;line-height:1.2;white-space:nowrap;transition:all .2s ease}
+.portfolio-switcher a:hover{color:#B21F5B}
+.portfolio-switcher a.active{background:#B21F5B;color:#fff;box-shadow:0 4px 14px rgba(178,31,91,.14)}
+
+.nav{position:fixed;top:var(--portfolio-switcher-h);left:0;right:0;z-index:100;padding:14px max(32px,calc((100vw - var(--page-max))/2 + 24px));display:flex;justify-content:space-between;align-items:center;transition:all .3s ease}
 .nav.scrolled{background:rgba(250,250,250,.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.06)}
 .nav-links{display:flex;gap:24px;font-size:13px;font-weight:500}
 .nav-links a{color:#666;text-decoration:none;transition:color .2s}
@@ -222,6 +229,9 @@ section{scroll-margin-top:76px}
 }
 
 @media(max-width:640px){
+  :root{--portfolio-switcher-h:36px}
+  .portfolio-switcher{padding:5px 10px}
+  .portfolio-switcher a{padding:5px 10px;font-size:11px}
   .nav{padding:14px 24px}
   .nav-links{display:none}
   .hero h1{font-size:28px}
@@ -249,10 +259,21 @@ section{scroll-margin-top:76px}
   .reel-gallery{grid-template-columns:repeat(4,minmax(0,1fr))}
   .impact-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
 }
+@media print{
+  .portfolio-switcher{display:none}
+}
 
 </style>
 </head>
 <body>
+
+<div class="portfolio-switcher" aria-label="Portfolio switcher">
+  <div class="portfolio-switcher__inner">
+    <a class="active" href="https://9cathyface8-cyber.github.io/jungju-content-marketing-portfolio/" aria-current="page">Content Marketing</a>
+    <a href="https://9cathyface8-cyber.github.io/jungju-content-marketing-portfolio/career/">Career</a>
+    <a href="https://9cathyface8-cyber.github.io/jungju-portfolio/ai-native/">AI Native</a>
+  </div>
+</div>
 
 <!-- ===== 네비게이션 ===== -->
 <nav class="nav" id="nav">

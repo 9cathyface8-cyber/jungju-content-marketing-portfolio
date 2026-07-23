@@ -1,12 +1,18 @@
 name: Export portfolio PDF
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/export-portfolio-pdf.yml'
+      - 'tools/export_portfolio_pdf.mjs'
+      - 'index.html'
   pull_request:
     branches: [main]
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   export:
@@ -91,3 +97,19 @@ jobs:
           path: pdf-export-output/
           if-no-files-found: error
           retention-days: 7
+
+      - name: Publish generated PDF to repository
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          mkdir -p downloads
+          cp pdf-export-output/안정주_콘텐츠_마케팅_포트폴리오.pdf downloads/안정주_콘텐츠_마케팅_포트폴리오.pdf
+          cp pdf-export-output/jungju-content-marketing-portfolio-final.pdf downloads/jungju-content-marketing-portfolio-latest.pdf
+          cp pdf-export-output/contact-sheet.png downloads/jungju-content-marketing-portfolio-contact-sheet.png
+          cp pdf-export-output/pdf-validation.json downloads/jungju-content-marketing-portfolio-validation.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add downloads/안정주_콘텐츠_마케팅_포트폴리오.pdf downloads/jungju-content-marketing-portfolio-latest.pdf downloads/jungju-content-marketing-portfolio-contact-sheet.png downloads/jungju-content-marketing-portfolio-validation.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'build: export latest content marketing portfolio PDF'
+            git push
+          fi

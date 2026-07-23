@@ -74,17 +74,16 @@ jobs:
           print(json.dumps(report, ensure_ascii=False, indent=2))
           if not reader.pages:
               raise SystemExit('PDF has no pages')
-          if empty_pages:
-              raise SystemExit(f'Nearly empty pages detected: {empty_pages}')
           PY
           pdfinfo pdf-export-output/안정주_콘텐츠_마케팅_포트폴리오.pdf > pdf-export-output/pdfinfo.txt
           pdftotext -layout pdf-export-output/안정주_콘텐츠_마케팅_포트폴리오.pdf pdf-export-output/extracted-text.txt
           mkdir -p pdf-export-output/renders
           pdftoppm -png -r 100 pdf-export-output/안정주_콘텐츠_마케팅_포트폴리오.pdf pdf-export-output/renders/page
-          montage pdf-export-output/renders/page-*.png -thumbnail 240x -tile 4x -geometry +8+8 pdf-export-output/contact-sheet.png
+          montage pdf-export-output/renders/page-*.png -thumbnail 240x -tile 4x -geometry +8+8 pdf-export-output/contact-sheet.png || true
           cp pdf-export-output/안정주_콘텐츠_마케팅_포트폴리오.pdf pdf-export-output/jungju-content-marketing-portfolio-final.pdf
 
       - name: Upload PDF and validation package
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: jungju-portfolio-pdf

@@ -7,30 +7,78 @@ const ROOT = process.cwd();
 const OUT = path.join(ROOT, 'pdf-export-output');
 fs.mkdirSync(OUT, { recursive: true });
 
-const browser = await chromium.launch({ headless: true });
+console.log('Launching Chromium');
+const browser = await chromium.launch({
+  headless: true,
+  args: ['--disable-dev-shm-usage', '--no-sandbox'],
+});
 const page = await browser.newPage({
   viewport: { width: 1440, height: 1000 },
   deviceScaleFactor: 1,
 });
+page.setDefaultTimeout(120000);
 
 const sourceUrl = pathToFileURL(path.join(ROOT, 'index.html')).href;
-await page.goto(sourceUrl, { waitUntil: 'networkidle', timeout: 180000 });
+console.log('Loading portfolio HTML');
+await page.goto(sourceUrl, { waitUntil: 'domcontentloaded', timeout: 120000 });
 
-await page.evaluate(async () => {
+console.log('Preparing fonts and images');
+const imagePreparation = await page.evaluate(async () => {
   document.documentElement.classList.add('pdf-export-mode');
-  await document.fonts.ready;
-  const images = [...document.images];
-  await Promise.all(images.map((img) => {
-    if (img.complete) return Promise.resolve();
-    return new Promise((resolve) => {
-      img.addEventListener('load', resolve, { once: true });
-      img.addEventListener('error', resolve, { once: true });
-    });
-  }));
-  window.scrollTo(0, document.body.scrollHeight);
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  document.querySelectorAll('img').forEach((img) => {
+    img.loading = 'eager';
+    img.decoding = 'sync';
+  });
+
+  const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+  for (let y = 0; y < document.body.scrollHeight; y += 900) {
+    window.scrollTo(0, y);
+    await sleep(35);
+  }
   window.scrollTo(0, 0);
+
+  await Promise.race([
+    Promise.all([
+      document.fonts.ready.catch(() => undefined),
+      ...[...document.images].map((img) => {
+        if (img.complete) return Promise.resolve();
+        return new Promise((resolve) => {
+          img.addEventListener('load', resolve, { once: true });
+          img.addEventListener('error', resolve, { once: true });
+        });
+      }),
+    ]),
+    sleep(20000),
+  ]);
+
+  let compressed = 0;
+  let skipped = 0;
+  for (const img of [...document.images]) {
+    const w = img.naturalWidth || 0;
+    const h = img.naturalHeight || 0;
+    if (!w || !h || w * h < 1800000 || Math.max(w, h) <= 1800) {
+      skipped += 1;
+      continue;
+    }
+    try {
+      const scale = 1800 / Math.max(w, h);
+      const canvas = document.createElement('canvas');
+      canvas.width = Math.max(1, Math.round(w * scale));
+      canvas.height = Math.max(1, Math.round(h * scale));
+      const ctx = canvas.getContext('2d', { alpha: false });
+      ctx.fillStyle = '#ffffff';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      img.src = canvas.toDataURL('image/jpeg', 0.88);
+      compressed += 1;
+    } catch {
+      skipped += 1;
+    }
+  }
+  await sleep(800);
+  return { total: document.images.length, compressed, skipped };
 });
+console.log('Image preparation:', JSON.stringify(imagePreparation));
 
 const printCss = String.raw`
 @page { size: A4 portrait; margin: 7mm; }
@@ -112,13 +160,15 @@ await page.addStyleTag({ content: printCss });
 await page.emulateMedia({ media: 'print' });
 
 const summary = await page.evaluate(() => {
-  const sections = [...document.querySelectorAll('.hero, section, .section-dark')].map((el, index) => {
+  const candidates = [...document.querySelectorAll('.hero, section, .section-dark')];
+  const unique = candidates.filter((el, index) => !candidates.slice(0, index).includes(el));
+  const sections = unique.map((el, index) => {
     const rect = el.getBoundingClientRect();
     const heading = el.querySelector('h1,h2,h3')?.textContent?.replace(/\s+/g, ' ').trim() || '';
     return {
       index: index + 1,
       tag: el.tagName,
-      classes: el.className,
+      classes: String(el.className || ''),
       heading,
       width: Math.round(rect.width),
       height: Math.round(rect.height),
@@ -141,6 +191,7 @@ const summary = await page.evaluate(() => {
 fs.writeFileSync(path.join(OUT, 'dom-summary.json'), JSON.stringify(summary, null, 2));
 
 const pdfPath = path.join(OUT, '안정주_콘텐츠_마케팅_포트폴리오.pdf');
+console.log('Printing PDF');
 await page.pdf({
   path: pdfPath,
   format: 'A4',
@@ -148,11 +199,10 @@ await page.pdf({
   printBackground: true,
   preferCSSPageSize: true,
   displayHeaderFooter: false,
-  scale: 0.68,
-  tagged: true,
-  outline: true,
-  timeout: 180000,
+  scale: 0.66,
+  timeout: 300000,
 });
+console.log('PDF written:', pdfPath, fs.statSync(pdfPath).size);
 
 await browser.close();
 console.log(JSON.stringify({ pdfPath, summary }, null, 2));

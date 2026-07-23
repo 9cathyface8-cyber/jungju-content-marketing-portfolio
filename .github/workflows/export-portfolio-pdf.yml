@@ -1,0 +1,93 @@
+name: Export portfolio PDF
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils imagemagick fonts-noto-cjk python3-pip
+
+      - name: Install browser tooling
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+
+      - name: Export PDF
+        run: node tools/export_portfolio_pdf.mjs
+
+      - name: Validate and render PDF
+        run: |
+          python3 -m pip install --break-system-packages pypdf
+          python3 - <<'PY'
+          from pathlib import Path
+          from pypdf import PdfReader
+          import json
+
+          out = Path('pdf-export-output')
+          pdf = out / '안정주_콘텐츠_마케팅_포트폴리오.pdf'
+          reader = PdfReader(str(pdf))
+          page_stats = []
+          total_links = 0
+          empty_pages = []
+          for i, page in enumerate(reader.pages, 1):
+              text = page.extract_text() or ''
+              annots = page.get('/Annots') or []
+              links = 0
+              for ref in annots:
+                  try:
+                      obj = ref.get_object()
+                      if obj.get('/Subtype') == '/Link':
+                          links += 1
+                  except Exception:
+                      pass
+              total_links += links
+              if len(text.strip()) < 10:
+                  empty_pages.append(i)
+              page_stats.append({'page': i, 'text_chars': len(text), 'links': links})
+          report = {
+              'pages': len(reader.pages),
+              'total_links': total_links,
+              'empty_pages': empty_pages,
+              'page_stats': page_stats,
+              'file_bytes': pdf.stat().st_size,
+          }
+          (out / 'pdf-validation.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
+          print(json.dumps(report, ensure_ascii=False, indent=2))
+          if not reader.pages:
+              raise SystemExit('PDF has no pages')
+          if empty_pages:
+              raise SystemExit(f'Nearly empty pages detected: {empty_pages}')
+          PY
+          pdfinfo pdf-export-output/안정주_콘텐츠_마케팅_포트폴리오.pdf > pdf-export-output/pdfinfo.txt
+          pdftotext -layout pdf-export-output/안정주_콘텐츠_마케팅_포트폴리오.pdf pdf-export-output/extracted-text.txt
+          mkdir -p pdf-export-output/renders
+          pdftoppm -png -r 100 pdf-export-output/안정주_콘텐츠_마케팅_포트폴리오.pdf pdf-export-output/renders/page
+          montage pdf-export-output/renders/page-*.png -thumbnail 240x -tile 4x -geometry +8+8 pdf-export-output/contact-sheet.png
+          cp pdf-export-output/안정주_콘텐츠_마케팅_포트폴리오.pdf pdf-export-output/jungju-content-marketing-portfolio-final.pdf
+
+      - name: Upload PDF and validation package
+        uses: actions/upload-artifact@v4
+        with:
+          name: jungju-portfolio-pdf
+          path: pdf-export-output/
+          if-no-files-found: error
+          retention-days: 7

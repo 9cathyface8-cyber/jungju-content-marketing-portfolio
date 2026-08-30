@@ -24,7 +24,7 @@
 10. Additional Work
 11. Tools & Execution
 
-가장 강한 사례인 우피터, 냥정주, FIFA 22 협업은 상세하게 설명하고 Viral Radar와 북적북적은 핵심 흐름을 유지한 보조 사례로 배치했다.
+가장 강한 사례인 우피터, 냥정주, FIFA 22 협업은 상세하게 설명하고 Viral Radar와 북적북적은 핵심 흐름을 유지한 보조 사례로 배치했다. 밖정주는 Additional Work로 이동했다.
 
 ## 주요 문구 변경
 

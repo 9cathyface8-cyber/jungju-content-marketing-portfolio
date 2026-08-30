@@ -267,6 +267,7 @@ section{scroll-margin-top:76px}
 .offmoon-employer-title{display:block;color:#fff;font-size:21px;line-height:1.25;margin-bottom:5px}
 .offmoon-employer-meta{color:#b7b9c0;font-size:12px;line-height:1.5}
 .offmoon-employer-meta .offmoon-metric-source{margin-top:0;color:#F2D43D}
+.offmoon-employer-works-label{display:block;margin-bottom:7px;color:#9ea0a7;font-size:10px;font-weight:800;letter-spacing:1px;text-align:right}
 .offmoon-employer-ips{display:flex;gap:8px;align-items:center}
 .offmoon-employer-ip{display:flex;align-items:center;gap:7px;padding:6px 9px;background:rgba(0,0,0,.26);border:1px solid rgba(255,255,255,.09);border-radius:12px;color:#e4e5e8;font-size:11px;font-weight:700;white-space:nowrap}
 .offmoon-employer-ip img{width:34px;height:34px;border-radius:9px;object-fit:cover}
@@ -315,11 +316,14 @@ section{scroll-margin-top:76px}
 .offmoon-subhead{margin:76px 0 24px}
 .offmoon-subhead span{display:block;color:#8b7100;font-size:11px;font-weight:800;letter-spacing:1.4px;margin-bottom:8px}
 .offmoon-subhead h3{font-size:30px;line-height:1.3;letter-spacing:-.025em}
-.offmoon-method-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.offmoon-method-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .offmoon-method-card{overflow:hidden;background:#fff;border:1px solid #dfddd6;border-radius:20px;min-width:0}
-.offmoon-method-visual{width:100%;height:390px;object-fit:cover;object-position:top;display:block;background:#111}
-.offmoon-method-visual-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));height:390px;background:#111}
-.offmoon-method-visual-pair img{display:block;width:100%;height:100%;object-fit:cover;object-position:top;min-width:0}
+.offmoon-method-card--wide{grid-column:1/-1}
+.offmoon-method-visual{width:100%;height:auto;object-fit:contain;display:block;background:#111}
+.offmoon-method-visual-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:10px;background:#111}
+.offmoon-method-visual-pair figure{min-width:0;background:#08090b;border-radius:12px;overflow:hidden}
+.offmoon-method-visual-pair img{display:block;width:100%;height:auto;min-width:0}
+.offmoon-method-visual-pair figcaption{padding:10px 12px;color:#b8bac0;font-size:10px;font-weight:700;line-height:1.4}
 .offmoon-method-body{padding:22px}
 .offmoon-method-index{font-size:11px;font-weight:800;color:#8b7100;letter-spacing:1px;margin-bottom:8px}
 .offmoon-method-body h4{font-size:19px;line-height:1.4;margin-bottom:9px}
@@ -333,6 +337,9 @@ section{scroll-margin-top:76px}
 .offmoon-commerce{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);gap:20px;padding:28px;background:#101114;color:#fff;border-radius:26px}
 .offmoon-commerce-copy{padding:10px 8px;display:flex;flex-direction:column;justify-content:center}
 .offmoon-commerce-copy .offmoon-case__tag{align-self:flex-start;background:#F2D43D;color:#111}
+.offmoon-commerce-game{margin:0 0 18px;overflow:hidden;border:1px solid #2b2d33;border-radius:16px;background:#18191d}
+.offmoon-commerce-game img{display:block;width:100%;aspect-ratio:616/353;object-fit:cover}
+.offmoon-commerce-game figcaption{padding:9px 12px;color:#b9bbc1;font-size:10px;font-weight:700;letter-spacing:.45px}
 .offmoon-commerce-copy h3{font-size:29px;line-height:1.3;margin-bottom:14px}
 .offmoon-commerce-copy p{color:#b9bbc1;font-size:14px;line-height:1.75;text-wrap:pretty}
 .offmoon-commerce-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:22px}
@@ -343,7 +350,7 @@ section{scroll-margin-top:76px}
 .offmoon-commerce-proof{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 .offmoon-commerce-proof figure{min-width:0;background:#18191d;border:1px solid #2b2d33;border-radius:16px;overflow:hidden}
 .offmoon-commerce-proof figure:first-child{grid-row:span 2}
-.offmoon-commerce-proof img{display:block;width:100%;height:100%;max-height:410px;object-fit:cover;object-position:top;background:#fff}
+.offmoon-commerce-proof img{display:block;width:100%;height:auto;max-height:410px;object-fit:contain;object-position:top;background:#fff}
 .offmoon-commerce-proof .steam-proof{height:176px;object-fit:contain;background:#31333a;padding:8px}
 .offmoon-commerce-proof figcaption{padding:12px;color:#b9bbc1;font-size:11px;line-height:1.5}
 .offmoon-timeline{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
@@ -404,7 +411,9 @@ section{scroll-margin-top:76px}
   .offmoon-employer-card{grid-template-columns:56px minmax(0,1fr);gap:14px;padding:16px}
   .offmoon-employer-logo{width:56px;height:56px;border-radius:13px}
   .offmoon-employer-title{font-size:18px}
-  .offmoon-employer-ips{grid-column:1/-1;flex-wrap:wrap}
+  .offmoon-employer-works{grid-column:1/-1}
+  .offmoon-employer-works-label{text-align:left}
+  .offmoon-employer-ips{flex-wrap:wrap}
   .offmoon-employer-ip{flex:1;min-width:140px}
   .offmoon-case{padding:72px 20px}
   .offmoon-case-lead{grid-template-columns:1fr}
@@ -416,7 +425,8 @@ section{scroll-margin-top:76px}
   .offmoon-evidence-ledger-head p{margin-top:8px;text-align:left}
   .offmoon-evidence-list{grid-template-columns:1fr}
   .offmoon-method-grid,.offmoon-proof-grid,.offmoon-commerce,.offmoon-timeline{grid-template-columns:1fr}
-  .offmoon-method-visual,.offmoon-method-visual-pair{height:360px}
+  .offmoon-method-card--wide{grid-column:auto}
+  .offmoon-method-visual-pair{grid-template-columns:1fr}
   .offmoon-proof-img{height:400px}
   .offmoon-commerce{padding:20px}
   .offmoon-commerce-proof{grid-template-columns:1fr}
@@ -439,7 +449,12 @@ section{scroll-margin-top:76px}
   .offmoon-lead-copy{padding:24px}
   .offmoon-lead-copy h3{font-size:23px}
   .offmoon-profile-proof,.offmoon-profile-proof img{min-height:420px}
-  .offmoon-method-card,.offmoon-proof-card,.offmoon-commerce,.offmoon-day,.offmoon-evidence-ledger{break-inside:avoid}
+  .offmoon-method-card,.offmoon-proof-card,.offmoon-commerce,.offmoon-commerce-game,.offmoon-day,.offmoon-evidence-ledger{break-inside:avoid}
+  .offmoon-method-visual{height:500px;object-fit:contain}
+  .offmoon-method-visual-pair{grid-template-columns:repeat(2,minmax(0,1fr));height:500px;padding:8px}
+  .offmoon-method-visual-pair figure{display:flex;flex-direction:column;justify-content:center}
+  .offmoon-method-visual-pair img{height:452px;object-fit:contain}
+  .offmoon-commerce-game img{max-height:165px}
   .offmoon-commerce-stat small{display:none}
   .offmoon-cta-row{display:none}
 }
@@ -476,18 +491,20 @@ section{scroll-margin-top:76px}
     <div>
       <div class="offmoon-employer-eyebrow">FIRST COMPANY · 111PERCENT</div>
       <strong class="offmoon-employer-title">111퍼센트</strong>
-      <div class="offmoon-employer-meta">공식 경쟁률 73:1 · 2026.08.24 경력직 콘텐츠 마케터 입사 · <a class="offmoon-metric-source" href="#evidence-u01">U01 사용자 제공 이력</a></div>
+      <div class="offmoon-employer-meta">공식 경쟁률 73:1 · 2026.08.24 경력직 콘텐츠 마케터 입사 · <a class="offmoon-metric-source" href="#evidence-u01">정보 출처</a></div>
     </div>
-    <div class="offmoon-employer-ips" aria-label="111퍼센트 대표작">
-      <span class="offmoon-employer-ip"><img src="../assets/offmoon/random-dice.jpg" alt="랜덤다이스 로고">Random Dice</span>
-      <span class="offmoon-employer-ip"><img src="../assets/offmoon/lucky-defense.webp" alt="운빨존많겜 이미지">운빨존많겜</span>
+    <div class="offmoon-employer-works">
+      <span class="offmoon-employer-works-label">111퍼센트 대표작</span>
+      <div class="offmoon-employer-ips" aria-label="111퍼센트 대표작">
+        <span class="offmoon-employer-ip"><img src="../assets/offmoon/random-dice.jpg" alt="랜덤다이스 로고">Random Dice</span>
+        <span class="offmoon-employer-ip"><img src="../assets/offmoon/lucky-defense.webp" alt="운빨존많겜 이미지">운빨존많겜</span>
+      </div>
     </div>
   </div>
   <div class="offmoon-label-rail fade-d1">
     <img class="offmoon-label-logo" src="../assets/offmoon/offmoon-logo.jpg" alt="OFFMOON 로고">
     <div><span>111% SUBSIDIARY LABEL</span><strong>OFFMOON LABEL · 콘텐츠 마케터</strong></div>
   </div>
-  <h1 class="fade-d1">입사 5일 만에,<br><span>광고비 0원으로 100만 조회</span></h1>
   <p class="hero-summary fade-d2">
     <span class="semantic-line">2026년 8월 24일, 111퍼센트 자회사 OFFMOON에 경력직 콘텐츠 마케터로 합류.</span>
     <span class="semantic-line">브랜드 계정의 ‘팔로우 이유’ 재정의. 게임 IP 캐릭터의 현실 활동을 연재형 숏폼 포맷으로 설계.</span>
@@ -518,17 +535,17 @@ section{scroll-margin-top:76px}
       <div class="metric-num">0원</div>
       <div class="metric-label">광고비</div>
       <div class="metric-sub">기획·스토리·오가닉 확산</div>
-      <a class="offmoon-metric-source" href="#evidence-u03">U03 사용자 제공 운영 수치</a>
+      <a class="offmoon-metric-source" href="#evidence-u03">광고비 기준</a>
     </div>
     <div class="metric-card">
       <div class="metric-num">+2,100%</div>
-      <div class="metric-label">HELLDECK 홍보영상 조회</div>
+      <div class="metric-label">OFFMOON 퍼블리싱 게임<br>HELLDECK 홍보영상 조회</div>
       <div class="metric-sub">기존 게시물 재확산 성과</div>
       <a class="offmoon-metric-source" href="#evidence-e03">E03 현재값</a><a class="offmoon-metric-source" href="#evidence-u04">U04 비교율</a>
     </div>
     <div class="metric-card">
       <div class="metric-num">+110%</div>
-      <div class="metric-label">HELLDECK 판매량</div>
+      <div class="metric-label">OFFMOON 퍼블리싱 게임<br>HELLDECK Steam 판매량</div>
       <div class="metric-sub">평시 평균 대비 · 8월 28일 16시 표시값 617 units</div>
       <a class="offmoon-metric-source" href="#evidence-e04">E04 현재값</a><a class="offmoon-metric-source" href="#evidence-u05">U05 비교율</a>
     </div>
@@ -558,7 +575,7 @@ section{scroll-margin-top:76px}
       </article>
       <figure class="offmoon-profile-proof" id="evidence-e02">
         <img src="../assets/offmoon/offmoon-profile-1091.jpg" alt="게시물 2개와 팔로워 1,091명을 기록한 OFFMOON.lab 프로필" loading="lazy">
-        <figcaption><span class="offmoon-evidence-ref">E02 · 직접 증빙</span><strong>2 posts · 1,091 followers</strong>첫 영상 147만·두 번째 영상 3.1만 조회 · 2026.08.30 기준일은 사용자 제공</figcaption>
+        <figcaption><span class="offmoon-evidence-ref">E02 · 직접 증빙</span><strong>2 posts · 1,091 followers</strong>첫 영상 147만·두 번째 영상 3.1만 조회 · 2026.08.30 기준</figcaption>
       </figure>
     </div>
 
@@ -572,18 +589,18 @@ section{scroll-margin-top:76px}
     <section class="offmoon-evidence-ledger" id="evidence-ledger" aria-labelledby="evidence-ledger-title">
       <div class="offmoon-evidence-ledger-head">
         <h3 id="evidence-ledger-title">수치별 증빙 맵</h3>
-        <p>E = 첨부 이미지에서 직접 확인 가능 · U = 사용자 제공 이력·운영 수치. 비교 기준 미첨부 값은 분리 표기함. 각 E ID 선택 시 원본 캡처로 이동.</p>
+        <p>E = 첨부 이미지에서 직접 확인 가능 · U = 이력·운영 기준 정보. 비교 기준 미첨부 값은 분리 표기함. 각 E ID 선택 시 원본 캡처로 이동.</p>
       </div>
       <div class="offmoon-evidence-list">
         <a class="offmoon-evidence-item" href="#evidence-e01"><b class="offmoon-evidence-id">E01</b><span><strong>조회 1,001,382 · 도달 616,639</strong>Reels Insights 원본 캡처에서 직접 확인 가능</span></a>
         <a class="offmoon-evidence-item" href="#evidence-e02"><b class="offmoon-evidence-id">E02</b><span><strong>147만 조회 · 팔로워 1,091</strong>OFFMOON.lab 프로필 원본 캡처에서 직접 확인 가능</span></a>
         <a class="offmoon-evidence-item" href="#evidence-e03"><b class="offmoon-evidence-id">E03</b><span><strong>HELLDECK 조회 20,182</strong>Reels Insights 원본 캡처에서 직접 확인 가능</span></a>
         <a class="offmoon-evidence-item" href="#evidence-e04"><b class="offmoon-evidence-id">E04</b><span><strong>2026.08.28 16시 표시값 617 units</strong>Steamworks 관리자 원본 캡처에서 직접 확인 가능</span></a>
-        <div class="offmoon-evidence-item" id="evidence-u01"><b class="offmoon-evidence-id offmoon-evidence-id--user">U01</b><span><strong>입사일 2026.08.24 · 경쟁률 73:1 · 5일차</strong>사용자 제공 공식 이력 · 별도 인사 캡처 미첨부</span></div>
-        <div class="offmoon-evidence-item" id="evidence-u02"><b class="offmoon-evidence-id offmoon-evidence-id--user">U02</b><span><strong>시작 팔로워 17 · 입사 전 평균 조회 1~2천</strong>사용자 제공 운영 수치 · 계산 기준값</span></div>
-        <div class="offmoon-evidence-item" id="evidence-u03"><b class="offmoon-evidence-id offmoon-evidence-id--user">U03</b><span><strong>광고비 0원</strong>사용자 제공 운영 수치 · 광고 관리자 화면 미첨부</span></div>
-        <div class="offmoon-evidence-item" id="evidence-u04"><b class="offmoon-evidence-id offmoon-evidence-id--user">U04</b><span><strong>HELLDECK 조회 +2,100%</strong>사용자 제공 비교율 · E03은 현재 조회 20,182만 직접 증빙</span></div>
-        <div class="offmoon-evidence-item" id="evidence-u05"><b class="offmoon-evidence-id offmoon-evidence-id--user">U05</b><span><strong>HELLDECK 판매 +110%</strong>사용자 제공 비교율 · E04는 617 units 표시값만 직접 증빙</span></div>
+        <div class="offmoon-evidence-item" id="evidence-u01"><b class="offmoon-evidence-id offmoon-evidence-id--user">U01</b><span><strong>입사일 2026.08.24 · 경쟁률 73:1 · 5일차</strong>이력 기준 정보 · 별도 인사 캡처 미첨부</span></div>
+        <div class="offmoon-evidence-item" id="evidence-u02"><b class="offmoon-evidence-id offmoon-evidence-id--user">U02</b><span><strong>시작 팔로워 17 · 입사 전 평균 조회 1~2천</strong>운영 기록 · 계산 기준값</span></div>
+        <div class="offmoon-evidence-item" id="evidence-u03"><b class="offmoon-evidence-id offmoon-evidence-id--user">U03</b><span><strong>광고비 0원</strong>운영 기록 · 광고 관리자 화면 미첨부</span></div>
+        <div class="offmoon-evidence-item" id="evidence-u04"><b class="offmoon-evidence-id offmoon-evidence-id--user">U04</b><span><strong>HELLDECK 조회 +2,100%</strong>운영 비교값 · E03은 현재 조회 20,182만 직접 증빙</span></div>
+        <div class="offmoon-evidence-item" id="evidence-u05"><b class="offmoon-evidence-id offmoon-evidence-id--user">U05</b><span><strong>HELLDECK 판매 +110%</strong>운영 비교값 · E04는 617 units 표시값만 직접 증빙</span></div>
       </div>
     </section>
 
@@ -592,10 +609,10 @@ section{scroll-margin-top:76px}
       <h3>성과를 만든 세 장면</h3>
     </div>
     <div class="offmoon-method-grid">
-      <article class="offmoon-method-card" id="evidence-c01">
+      <article class="offmoon-method-card offmoon-method-card--wide" id="evidence-c01">
         <div class="offmoon-method-visual-pair" aria-label="OFFMOON 기존 계정과 릴스 콘텐츠 그리드">
-          <img src="../assets/offmoon/before-profile.jpg" alt="기존 find_offmoon 계정 프로필" loading="lazy">
-          <img src="../assets/offmoon/before-grid.jpg" alt="기존 find_offmoon 릴스 콘텐츠 그리드" loading="lazy">
+          <figure><img src="../assets/offmoon/before-profile.jpg" alt="기존 find_offmoon 계정 프로필" loading="lazy"><figcaption>기존 브랜드 계정 프로필</figcaption></figure>
+          <figure><img src="../assets/offmoon/before-grid.jpg" alt="기존 find_offmoon 릴스 콘텐츠 그리드" loading="lazy"><figcaption>기존 릴스 주제·구성</figcaption></figure>
         </div>
         <div class="offmoon-method-body"><span class="offmoon-evidence-ref">C01 · 맥락 증빙</span><div class="offmoon-method-index">01 · DIAGNOSIS</div><h4>넓은 주제를 하나의 팔로우 이유로 압축</h4><p>정보·추천 중심 콘텐츠를 반복 가능한 서사 포맷으로 전환. 다시 찾을 이유를 우선 과제로 설정.</p></div>
       </article>
@@ -624,7 +641,7 @@ section{scroll-margin-top:76px}
       </figure>
       <figure class="offmoon-proof-card" id="evidence-e03">
         <img class="offmoon-proof-img" src="../assets/offmoon/helldeck-insights.jpg" alt="조회 20,182를 기록한 HELLDECK 릴스 인사이트" loading="lazy">
-        <figcaption class="offmoon-proof-caption"><span class="offmoon-evidence-ref">E03 · 직접 증빙</span><strong>기존 HELLDECK 영상 재확산</strong><em>조회 20,182</em> · 평균 시청 22초 · +2,100%는 사용자 제공 비교율</figcaption>
+        <figcaption class="offmoon-proof-caption"><span class="offmoon-evidence-ref">E03 · 직접 증빙</span><strong>기존 HELLDECK 영상 재확산</strong><em>조회 20,182</em> · 평균 시청 22초 · +2,100%는 U04 비교 기준</figcaption>
       </figure>
     </div>
 
@@ -636,18 +653,22 @@ section{scroll-margin-top:76px}
       <div class="offmoon-commerce-copy">
         <div class="offmoon-case__tag">HELLDECK IMPACT</div>
         <h3>조회 상승과 판매 상승, 같은 시점에 발생</h3>
+        <figure class="offmoon-commerce-game">
+          <img src="../assets/offmoon/helldeck-capsule.jpg" alt="HELLDECK Steam 캡슐 아트" loading="lazy">
+          <figcaption>HELLDECK · OFFMOON 퍼블리싱 타이틀</figcaption>
+        </figure>
         <p>첫 영상에 OFFMOON 퍼블리싱 타이틀 HELLDECK을 세계관 시작점으로 활용. 이후 기존 홍보영상 조회 재상승. 8월 28일 16시 Steamworks 화면에서 617 units 표시값 확인.</p>
         <div class="offmoon-commerce-stats">
-          <div class="offmoon-commerce-stat"><strong>+2,100%</strong><span>HELLDECK 기존 홍보영상 조회 증가</span><small>U04 · 사용자 제공 비교율</small></div>
-          <div class="offmoon-commerce-stat"><strong>+110%</strong><span>입사 전 평시 평균 대비 판매량 증가</span><small>U05 · 사용자 제공 비교율</small></div>
+          <div class="offmoon-commerce-stat"><strong>+2,100%</strong><span>HELLDECK 기존 홍보영상 조회 증가</span><small>U04 · 운영 비교값</small></div>
+          <div class="offmoon-commerce-stat"><strong>+110%</strong><span>입사 전 평시 평균 대비 판매량 증가</span><small>U05 · 운영 비교값</small></div>
           <div class="offmoon-commerce-stat"><strong>20,182</strong><span>HELLDECK 홍보영상 누적 조회</span><small>E03 · 직접 증빙</small></div>
           <div class="offmoon-commerce-stat"><strong>617</strong><span>8월 28일 16시 Steam 표시값</span><small>E04 · 직접 증빙</small></div>
         </div>
       </div>
       <div class="offmoon-commerce-proof">
         <figure id="evidence-e03-rates"><img src="../assets/offmoon/helldeck-rates.jpg" alt="HELLDECK 릴스 조회수 영향 요인 화면" loading="lazy"><figcaption><span class="offmoon-evidence-ref">E03-B · 직접 증빙</span>HELLDECK Reels Insights · 건너뛰기 18.0%·좋아요 1.2%</figcaption></figure>
-        <figure id="evidence-e04"><img class="steam-proof" src="../assets/offmoon/steam-sales.jpg" alt="8월 28일 16시 617 units를 표시한 HELLDECK Steam 판매량 그래프" loading="lazy"><figcaption><span class="offmoon-evidence-ref">E04 · 직접 증빙</span>Steamworks 617 units · 2026.08.28 16시 표시값<br>+110%는 사용자 제공 평균 대비 비교율</figcaption></figure>
-        <figure><img class="steam-proof" src="../assets/offmoon/111percent-logo.jpg" alt="111퍼센트 로고" loading="lazy"><figcaption>111% subsidiary · OFFMOON</figcaption></figure>
+        <figure id="evidence-e04"><img class="steam-proof" src="../assets/offmoon/steam-sales.jpg" alt="8월 28일 16시 617 units를 표시한 HELLDECK Steam 판매량 그래프" loading="lazy"><figcaption><span class="offmoon-evidence-ref">E04 · 직접 증빙</span>Steamworks 617 units · 2026.08.28 16시 표시값<br>+110%는 U05 평균 대비 기준</figcaption></figure>
+        <figure><img class="steam-proof" src="../assets/offmoon/offmoon-logo.jpg" alt="OFFMOON 로고" loading="lazy"><figcaption>OFFMOON · PUBLISHING LABEL</figcaption></figure>
       </div>
     </section>
 
@@ -660,9 +681,8 @@ section{scroll-margin-top:76px}
       <article class="offmoon-day"><time>2026.08.28 · DAY 5</time><strong>광고비 0원, 100만 돌파</strong><p>첫 연재형 콘텐츠 조회 1,001,382·도달 616,639 기록. 전략 초기 적합성 검증.</p></article>
       <article class="offmoon-day"><time>2026.08.30 · DAY 7</time><strong>147만 조회·1,091 팔로워</strong><p>2개 게시물로 계정 성장 기울기 전환. 기존 HELLDECK 콘텐츠와 판매 지표까지 반응 확장.</p></article>
     </div>
-    <p class="offmoon-source-note">계산: 팔로워 증가율=(1,091−17)÷17=6,317.6% → +6,318%. 조회 증가율=(1,470,000−2,000)÷2,000=73,400%. E01–E06은 첨부 원본 이미지에서 확인 가능한 값. U01–U05는 사용자 제공 이력·운영 수치. 비교 기준 화면 미첨부 값은 사진 증빙과 분리 표기함.</p>
+    <p class="offmoon-source-note">계산: 팔로워 증가율=(1,091−17)÷17=6,317.6% → +6,318%. 조회 증가율=(1,470,000−2,000)÷2,000=73,400%. E01–E06은 첨부 원본 이미지에서 확인 가능한 값. U01–U05는 이력·운영 기준 정보. 비교 기준 화면 미첨부 값은 사진 증빙과 분리 표기함.</p>
     <div class="offmoon-cta-row">
-      <a class="offmoon-cta" href="../downloads/jungju-content-marketing-portfolio-offmoon-20260830.pdf">OFFMOON 버전 PDF</a>
       <a class="offmoon-cta offmoon-cta--ghost" href="https://www.instagram.com/offmoon.lab/" target="_blank" rel="noopener">OFFMOON.lab 공개 계정</a>
     </div>
   </div>

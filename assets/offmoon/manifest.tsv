@@ -1,13 +1,14 @@
 asset	original	observed_value	claim_supported	source_type
 first-reel.jpg	입사후 첫 컨텐츠.jpeg	좋아요 4.5만·댓글 222·리포스트 1,382·공유 3.9만	첫 OFFMOON.lab 엘든링 콘텐츠의 공개 반응	Instagram 공개 화면
-reel-insights-1m.jpg	엘든링편 퍼포먼스 데이터.jpeg	조회 1,001,382·도달 616,639·평균 시청 16초·팔로우 534	입사 5일차 100만 조회 돌파	Instagram Reels Insights
+reel-insights-1m.jpg	엘든링편 퍼포먼스 데이터.jpeg	조회 1,001,382·도달 616,639·평균 시청 16초·팔로우 534	조회 100만 돌파 화면값	Instagram Reels Insights
 comments.jpg	댓글 반응.jpeg	다국어 댓글과 댓글 좋아요	언어권을 넘은 자발적 반응	Instagram 공개 화면
 story-teaser.jpg	스토리 전략.jpeg	다음 콘텐츠 단서형 스토리	후속편 기대를 만드는 티저 운영	Instagram Story 공개 화면
-steam-sales.jpg	스팀 판매량.jpeg	2026-08-28 617 units	HELLDECK 일 판매량 피크	Steamworks 관리자 화면·공개 허용 확인
+steam-sales.jpg	스팀 판매량.jpeg	2026-08-28 16시 표시값 617 units	HELLDECK 판매 화면 표시값	Steamworks 관리자 화면·공개 허용 확인
 helldeck-insights.jpg	헬덱 영상 퍼포먼스 데이터.jpeg	조회 20,182·도달 16,723·평균 시청 22초·팔로우 97	기존 HELLDECK 홍보영상 재확산	Instagram Reels Insights
-offmoon-profile-1091.jpg	offmoon.lab 입사 5일차 현황.jpeg	게시물 2·팔로워 1,091·영상 147만/3.1만	8월 30일 계정 성장 현황	Instagram 프로필 공개 화면
+offmoon-profile-1091.jpg	offmoon.lab 입사 5일차 현황.jpeg	게시물 2·팔로워 1,091·영상 147만/3.1만	계정 조회·팔로워 화면값	Instagram 프로필 공개 화면
 helldeck-rates.jpg	헬덱 영상 퍼포먼스데이터 2.jpeg	건너뛰기 18.0%·공유 0.2%·좋아요 1.2%·저장 0.2%	HELLDECK 조회 영향 지표	Instagram Reels Insights
-before-grid.jpg	오프문 초기상황2.jpeg	기존 릴스 주제·조회 분포	입사 전 콘텐츠 포맷 출발점	Instagram 프로필 공개 화면
+before-grid.jpg	오프문 초기상황2.jpeg	find_offmoon 릴스 주제·조회 분포	기존 브랜드 콘텐츠 포맷 맥락	Instagram 프로필 공개 화면
+before-profile.jpg	오프문 초기상황.jpeg	find_offmoon 프로필·게시물 13·팔로워 149	입사 전 브랜드 계정 맥락	Instagram 프로필 공개 화면
 111percent-logo.jpg	111퍼센트 로고.jpg	111% 로고	회사 맥락	사용자 제공 브랜드 자산
 offmoon-logo.jpg	오프문 로고.jpg	OFFMOON 로고	111% 산하 레이블 맥락	사용자 제공 브랜드 자산
 random-dice.jpg	랜덤다이스.jpeg	Random Dice 로고	대표작 맥락	사용자 제공 브랜드 자산

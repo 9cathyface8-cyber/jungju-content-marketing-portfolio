@@ -1,0 +1,283 @@
+{
+  "period": {
+    "start": "2026-08-24",
+    "end": "2026-10-23"
+  },
+  "asOf": "2026-10-23T01:27:09.748Z",
+  "role": "Official Instagram and label YouTube: all stages solo, confirmed by user 2026-10-23. LAB collaboration remains separately attributed.",
+  "instagram": {
+    "entry": 56,
+    "entrySource": "User confirmed entry follower count; no exact measurement time supplied",
+    "audience": 3754,
+    "observedAt": "2026-10-23T01:20:15.611Z",
+    "growthMultiple": 67.03571428571429,
+    "reels": 20,
+    "views": 4703406,
+    "viewsApproximate": true,
+    "over100k": 13
+  },
+  "youtube": {
+    "audience": 3770,
+    "approximate": true,
+    "observedAt": "2026-10-23T01:04:03.986Z",
+    "brandVideoViews": 260005,
+    "videoId": "OJGWOHe3yhk"
+  },
+  "reels": [
+    {
+      "id": "DdQw4TehfL0",
+      "title": "한 미친 회사가 매달 신작을 계속 1,100원에 파는 이유",
+      "url": "https://www.instagram.com/p/DdQw4TehfL0/",
+      "publishedAt": "2026-09-14T09:00:06.000Z",
+      "views": 104000,
+      "observedAt": "2026-10-23T01:02:53.802Z"
+    },
+    {
+      "id": "DdJChzqh21k",
+      "title": "포켓몬 트레이너는 왜 금수저 엘리트 스포츠일까?",
+      "url": "https://www.instagram.com/p/DdJChzqh21k/",
+      "publishedAt": "2026-09-11T09:00:22.000Z",
+      "views": 24000,
+      "observedAt": "2026-10-23T01:12:26.699Z"
+    },
+    {
+      "id": "DdK3RylhpNS",
+      "title": "슈퍼마리오는 왜 슈퍼마리오일까?",
+      "url": "https://www.instagram.com/p/DdK3RylhpNS/",
+      "publishedAt": "2026-09-10T09:00:02.000Z",
+      "views": 217000,
+      "observedAt": "2026-10-23T01:12:26.699Z"
+    },
+    {
+      "id": "DclGav0JS93",
+      "title": "게임 장르 이름은 어디서 왔을까? · 로그라이크",
+      "url": "https://www.instagram.com/p/DclGav0JS93/",
+      "publishedAt": "2026-08-28T10:02:55.000Z",
+      "views": 63000,
+      "observedAt": "2026-10-23T01:12:26.699Z"
+    },
+    {
+      "id": "DdV6hQQhPbU",
+      "title": "동물의 숲에서는 왜 나만 ‘인간’일까?",
+      "url": "https://www.instagram.com/p/DdV6hQQhPbU/",
+      "publishedAt": "2026-09-16T09:00:06.000Z",
+      "views": 1496000,
+      "observedAt": "2026-10-23T01:12:26.699Z"
+    },
+    {
+      "id": "DdfW0RhBPvb",
+      "title": "별의 커비의 뱃속은 어떤 구조일까?",
+      "url": "https://www.instagram.com/p/DdfW0RhBPvb/",
+      "publishedAt": "2026-09-19T01:00:03.000Z",
+      "views": 159000,
+      "observedAt": "2026-10-23T01:03:16.903Z"
+    },
+    {
+      "id": "Ddn8F5dh18d",
+      "title": "게임 싸게 팔았다고 실시간 억까당하는 중인 한국 게임사 실체",
+      "url": "https://www.instagram.com/p/Ddn8F5dh18d/",
+      "publishedAt": "2026-09-23T09:00:06.000Z",
+      "views": 92000,
+      "observedAt": "2026-10-23T01:02:53.802Z"
+    },
+    {
+      "id": "Ddi5ZmIz3uh",
+      "title": "메이플스토리는 왜 메이플스토리일까?",
+      "url": "https://www.instagram.com/p/Ddi5ZmIz3uh/",
+      "publishedAt": "2026-09-21T10:00:24.000Z",
+      "views": 22000,
+      "observedAt": "2026-10-23T01:03:16.903Z"
+    },
+    {
+      "id": "Dduzex9B8Ea",
+      "title": "아이작은 왜 자신의 엄마를 쓰러뜨려야 할까?",
+      "url": "https://www.instagram.com/p/Dduzex9B8Ea/",
+      "publishedAt": "2026-09-26T01:00:09.000Z",
+      "views": 320000,
+      "observedAt": "2026-10-23T01:03:16.903Z"
+    },
+    {
+      "id": "Dd59nQ9Ois_",
+      "title": "중국에 게임 털린 한국 회사의 반응",
+      "url": "https://www.instagram.com/p/Dd59nQ9Ois_/",
+      "publishedAt": "2026-09-30T09:00:07.000Z",
+      "views": 142000,
+      "observedAt": "2026-10-23T01:02:53.802Z"
+    },
+    {
+      "id": "Dd0z_26MRML",
+      "title": "레이튼 교수는 어떤 과 교수일까?",
+      "url": "https://www.instagram.com/p/Dd0z_26MRML/",
+      "publishedAt": "2026-09-28T09:00:13.000Z",
+      "views": 155000,
+      "observedAt": "2026-10-23T01:03:16.903Z"
+    },
+    {
+      "id": "DeL_LTFuxbR",
+      "title": "9억명 상대로 맞짱 신청한 한국 게임사 · 데모 공개",
+      "url": "https://www.instagram.com/p/DeL_LTFuxbR/",
+      "publishedAt": "2026-10-08T09:00:02.000Z",
+      "views": 3406,
+      "observedAt": "2026-10-23T01:02:53.802Z"
+    },
+    {
+      "id": "DeG1of8OGsy",
+      "title": "롤 캐릭터들은 싸우다 죽으면 어디로 갈까?",
+      "url": "https://www.instagram.com/p/DeG1of8OGsy/",
+      "publishedAt": "2026-10-05T09:00:16.000Z",
+      "views": 102000,
+      "observedAt": "2026-10-23T01:02:53.802Z"
+    },
+    {
+      "id": "Dd_HQMIuGk7",
+      "title": "소닉 악마 숭배 의혹은 사실일까?",
+      "url": "https://www.instagram.com/p/Dd_HQMIuGk7/",
+      "publishedAt": "2026-10-02T09:00:05.000Z",
+      "views": 452000,
+      "observedAt": "2026-10-23T01:02:53.802Z"
+    },
+    {
+      "id": "DeeWuEepq1n",
+      "title": "한 회사가 개폐급 직원을 절대 못 자르는 이유",
+      "url": "https://www.instagram.com/p/DeeWuEepq1n/",
+      "publishedAt": "2026-10-14T12:13:44.000Z",
+      "views": 10000,
+      "observedAt": "2026-10-23T01:02:53.802Z"
+    },
+    {
+      "id": "DeY3L2psZQO",
+      "title": "배그에서 우승하면 왜 치킨이라고 할까?",
+      "url": "https://www.instagram.com/p/DeY3L2psZQO/",
+      "publishedAt": "2026-10-12T09:00:12.000Z",
+      "views": 273000,
+      "observedAt": "2026-10-23T01:02:53.802Z"
+    },
+    {
+      "id": "DeTtlrNO3GA",
+      "title": "GTA는 왜 사이비 종교를 창설했을까요?",
+      "url": "https://www.instagram.com/p/DeTtlrNO3GA/",
+      "publishedAt": "2026-10-10T01:30:02.000Z",
+      "views": 36000,
+      "observedAt": "2026-10-23T01:02:53.802Z"
+    },
+    {
+      "id": "DewCYfgM--D",
+      "title": "로블록스가 사상 최악의 게임이 된 이유 · 저작권 이슈",
+      "url": "https://www.instagram.com/offmoon_official/reel/DewCYfgM--D/",
+      "publishedAt": "2026-10-21T09:00:04.000Z",
+      "views": 249000,
+      "observedAt": "2026-10-23T01:02:53.802Z"
+    },
+    {
+      "id": "Deq-TEHpQs8",
+      "title": "닌텐도 악마의 칩 R4는 누가 만들었을까?",
+      "url": "https://www.instagram.com/offmoon_official/reel/Deq-TEHpQs8/",
+      "publishedAt": "2026-10-19T09:53:53.000Z",
+      "views": 669000,
+      "observedAt": "2026-10-23T01:02:53.802Z"
+    },
+    {
+      "id": "DejKZJksnuR",
+      "title": "동물의 숲에서는 왜 돈을 벨이라고 할까?",
+      "url": "https://www.instagram.com/offmoon_official/reel/DejKZJksnuR/",
+      "publishedAt": "2026-10-16T09:00:07.000Z",
+      "views": 115000,
+      "observedAt": "2026-10-23T01:02:53.802Z"
+    }
+  ],
+  "points": [
+    {
+      "channel": "ig_official",
+      "at": "2026-08-28",
+      "datePrecision": "day",
+      "audience": 149,
+      "method": "user_reported",
+      "source": "사용자 제공: 2026년 8월 28일 offmoon_official 팔로워 149명",
+      "status": "reported",
+      "note": "사용자가 확인해 준 과거 팔로워 기준. 측정 시각은 제공되지 않았으므로 날짜 단위로 표시."
+    },
+    {
+      "channel": "ig_official",
+      "at": "2026-09-18T01:37:54.532Z",
+      "audience": 937,
+      "source": "https://www.instagram.com/offmoon_official/reels/",
+      "method": "public_browser",
+      "status": "ok",
+      "collectionCutoff": "2026-09-18T00:00:00.000Z",
+      "note": "같은 리포트 작업 01a0a3fb-3182-7f63-ad64-730305ae1d9f의 독립 브라우저 실제 관측 전달. 01:28 팔로워936 관측 보존."
+    },
+    {
+      "channel": "ig_official",
+      "audience": 1636,
+      "at": "2026-09-25T01:29:45.942Z",
+      "source": "https://www.instagram.com/offmoon_official/reels/",
+      "method": "public_browser",
+      "status": "ok",
+      "collectionCutoff": "2026-09-25T00:00:00.000Z"
+    },
+    {
+      "channel": "ig_official",
+      "at": "2026-10-02T02:50:00.031Z",
+      "collectionCutoff": "2026-10-02T00:00:00.000Z",
+      "audience": 2614,
+      "source": "https://www.instagram.com/offmoon_official/reels/",
+      "method": "public_browser",
+      "status": "ok",
+      "note": "공개 프로필 팔로워 라벨"
+    },
+    {
+      "channel": "ig_official",
+      "at": "2026-10-09T13:42:16.588Z",
+      "collectionCutoff": "2026-10-09T00:00:00.000Z",
+      "audience": 3152,
+      "source": "https://www.instagram.com/offmoon_official/reels/",
+      "method": "public_browser",
+      "status": "ok",
+      "note": "공개 프로필 팔로워 숫자 확인"
+    },
+    {
+      "channel": "ig_official",
+      "at": "2026-10-16T01:04:12.870Z",
+      "collectionCutoff": "2026-10-16T00:00:00.000Z",
+      "audience": 3347,
+      "source": "https://www.instagram.com/offmoon_official/reels/",
+      "method": "public_browser",
+      "status": "ok",
+      "note": "공개 프로필 팔로워 라벨 3347명"
+    },
+    {
+      "channel": "ig_official",
+      "at": "2026-10-23T01:20:15.611Z",
+      "collectionCutoff": "2026-10-23T00:00:00.000Z",
+      "audience": 3754,
+      "source": "https://www.instagram.com/offmoon_official/reels/",
+      "method": "public_browser",
+      "status": "ok",
+      "note": "공개 프로필 팔로워 라벨 3754 직접 확인. 메타데이터 후보값 미사용."
+    }
+  ],
+  "ownerInsights": {
+    "receivedDate": "2026-10-07",
+    "captureTimeUnknown": true,
+    "brandFollows": [
+      1030,
+      499,
+      560
+    ],
+    "carouselSharesApprox": 31000,
+    "carouselSaves": 1599
+  },
+  "screenshots": {
+    "capturedDate": "2026-10-23",
+    "capturedAt": null,
+    "note": "Afternoon screenshots are visual evidence; KPI totals retain the morning report cutoff. Images are original captures; layout crops only.",
+    "instagramGrid": "https://www.instagram.com/offmoon_official/reels/",
+    "youtubeBrand": "https://www.youtube.com/watch?v=OJGWOHe3yhk",
+    "captureTimeUnknown": true,
+    "fileSavedAt": {
+      "instagram-grid.png": "2026-10-23T06:54:24.438Z",
+      "instagram-classics.png": "2026-10-23T06:55:00.165Z",
+      "youtube-brand.png": "2026-10-23T06:56:29.139Z"
+    }
+  }
+}

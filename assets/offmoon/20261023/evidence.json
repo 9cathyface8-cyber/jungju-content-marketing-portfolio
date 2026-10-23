@@ -21,7 +21,73 @@
     "approximate": true,
     "observedAt": "2026-10-23T01:04:03.986Z",
     "brandVideoViews": 260005,
-    "videoId": "OJGWOHe3yhk"
+    "videoId": "OJGWOHe3yhk",
+    "points": [
+      {
+        "channel": "yt_label",
+        "at": "2026-09-14T15:13:22+09:00",
+        "audience": 43,
+        "method": "previous_verified_snapshot",
+        "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg/"
+      },
+      {
+        "channel": "yt_label",
+        "at": "2026-09-18T01:27:36.958Z",
+        "collectionCutoff": "2026-09-18T00:00:00.000Z",
+        "audience": 47,
+        "method": "public_http",
+        "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg",
+        "status": "collected"
+      },
+      {
+        "channel": "yt_label",
+        "at": "2026-09-25T01:29:05.669Z",
+        "collectionCutoff": "2026-09-25T00:00:00.000Z",
+        "audience": 106,
+        "method": "public_http",
+        "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg",
+        "status": "collected"
+      },
+      {
+        "channel": "yt_label",
+        "at": "2026-10-02T02:49:11.734Z",
+        "collectionCutoff": "2026-10-02T00:00:00.000Z",
+        "audience": 130,
+        "method": "public_http",
+        "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg",
+        "status": "collected"
+      },
+      {
+        "channel": "yt_label",
+        "at": "2026-10-09T13:53:21.966Z",
+        "collectionCutoff": "2026-10-09T00:00:00.000Z",
+        "audience": 167,
+        "source": "https://www.youtube.com/watch?v=pmzc8gzT5sU",
+        "method": "public_browser",
+        "status": "ok",
+        "note": "공개 원문 채널 구독자 167명 표시 확인; 앞선 HTTP 166과 실제 관측 시각 구분"
+      },
+      {
+        "channel": "yt_label",
+        "at": "2026-10-16T01:03:27.864Z",
+        "collectionCutoff": "2026-10-16T00:00:00.000Z",
+        "audience": 478,
+        "method": "public_http",
+        "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg",
+        "status": "collected"
+      },
+      {
+        "channel": "yt_label",
+        "at": "2026-10-23T01:04:03.986Z",
+        "audience": 3770,
+        "audienceApprox": true,
+        "display": "구독자 3.77천명",
+        "method": "public_browser",
+        "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg/shorts",
+        "status": "collected",
+        "collectionCutoff": "2026-10-23T00:00:00.000Z"
+      }
+    ]
   },
   "reels": [
     {
@@ -278,6 +344,34 @@
       "instagram-grid.png": "2026-10-23T06:54:24.438Z",
       "instagram-classics.png": "2026-10-23T06:55:00.165Z",
       "youtube-brand.png": "2026-10-23T06:56:29.139Z"
+    }
+  },
+  "combinedAudience": {
+    "value": 7524,
+    "approximate": true,
+    "scope": [
+      "ig_official",
+      "yt_label"
+    ],
+    "deduplicated": false,
+    "asOf": "2026-10-23",
+    "note": "Sum of two platform follower/subscriber counts; not unique people."
+  },
+  "careerMilestones": {
+    "initialLab": {
+      "period": "first five days after joining 2026-08-24",
+      "viewsMinimum": 1600000,
+      "source": "User confirmation in portfolio revision conversation on 2026-10-23",
+      "method": "user_reported",
+      "note": "Initial achievement only; LAB later pivoted. Not added to official channel totals."
+    },
+    "officialRole": {
+      "scope": [
+        "ig_official",
+        "yt_label"
+      ],
+      "directionAndProduction": "solo end-to-end",
+      "source": "User confirmation 2026-10-23"
     }
   }
 }

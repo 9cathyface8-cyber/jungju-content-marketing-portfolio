@@ -373,5 +373,43 @@
       "directionAndProduction": "solo end-to-end",
       "source": "User confirmation 2026-10-23"
     }
+  },
+  "companyContext": {
+    "group": "SUPERFAST",
+    "company": "111PERCENT",
+    "assignedBrand": "OFFMOON",
+    "relationship": "111PERCENT and OFFMOON are members of SUPERFAST group. OFFMOON is its Steam publishing subsidiary.",
+    "sources": [
+      {
+        "url": "https://superfast.best/newsroom/260715/",
+        "publishedDate": "2026-07-15",
+        "supports": "Group structure, OFFMOON subsidiary and representative 111PERCENT games"
+      },
+      {
+        "url": "https://superfast.best/newsroom/h1-achievement/",
+        "publishedDate": "2026-08-06",
+        "supports": "2026 H1 group revenue KRW 106.5 billion and representative games"
+      },
+      {
+        "url": "https://superfast.best/brand-resource/",
+        "supports": "Official SUPERFAST, 111PERCENT and OFFMOON logos"
+      }
+    ],
+    "groupRevenue": {
+      "value": 106500000000,
+      "currency": "KRW",
+      "period": "2026 H1"
+    },
+    "representativeGames": [
+      "Random Dice",
+      "Lucky Defense"
+    ],
+    "joined": {
+      "date": "2026-08-24",
+      "role": "콘텐츠 마케터",
+      "hiringType": "경력직",
+      "competitionRatio": "73:1",
+      "source": "User-provided career history retained from previous portfolio 32966de; reconfirmed in 2026-10-23 revision request"
+    }
   }
 }

@@ -1,0 +1,163 @@
+{
+  "updatedAt": "2026-11-13",
+  "scope": [
+    "ig_official",
+    "yt_label"
+  ],
+  "audience": {
+    "instagram": {
+      "value": 4116,
+      "at": "2026-10-30T01:14:03.323Z",
+      "source": "https://www.instagram.com/offmoon_official/"
+    },
+    "youtube": {
+      "value": 4270,
+      "approx": true,
+      "at": "2026-11-13T01:07:20.493Z",
+      "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg"
+    },
+    "sumLastKnown": 8386,
+    "note": "마지막 성공값 합계; 서로 다른 관측일. 중복 제거 인원 아님."
+  },
+  "brandVideo": {
+    "id": "OJGWOHe3yhk",
+    "views": 284329,
+    "at": "2026-11-13T01:07:29.193Z",
+    "source": "https://www.youtube.com/watch?v=OJGWOHe3yhk"
+  },
+  "graph": [
+    {
+      "channel": "ig_official",
+      "points": [
+        {
+          "channel": "ig_official",
+          "at": "2026-08-28",
+          "audience": 149,
+          "datePrecision": "day",
+          "source": "사용자 제공: 2026년 8월 28일 offmoon_official 팔로워 149명"
+        },
+        {
+          "channel": "ig_official",
+          "at": "2026-09-17T01:11:35.532Z",
+          "audience": 884,
+          "source": "https://www.instagram.com/offmoon_official/reels/"
+        },
+        {
+          "channel": "ig_official",
+          "at": "2026-09-23T09:17:52.707Z",
+          "audience": 1126,
+          "source": "https://www.instagram.com/offmoon_official/"
+        },
+        {
+          "channel": "ig_official",
+          "at": "2026-10-01T03:49:29.000Z",
+          "audience": 2404,
+          "source": "사용자 대화: 인스타그램 팔로워 와중에 2404명"
+        },
+        {
+          "channel": "ig_official",
+          "at": "2026-10-02T02:50:00.031Z",
+          "audience": 2614,
+          "source": "https://www.instagram.com/offmoon_official/reels/"
+        },
+        {
+          "channel": "ig_official",
+          "at": "2026-10-09T13:42:16.588Z",
+          "audience": 3152,
+          "source": "https://www.instagram.com/offmoon_official/reels/"
+        },
+        {
+          "channel": "ig_official",
+          "at": "2026-10-22T03:46:00Z",
+          "audience": 3684,
+          "datePrecision": "minute",
+          "source": "https://www.instagram.com/offmoon_official/reels/",
+          "approx": false
+        },
+        {
+          "channel": "ig_official",
+          "at": "2026-10-23T01:20:15.611Z",
+          "audience": 3754,
+          "source": "https://www.instagram.com/offmoon_official/reels/"
+        },
+        {
+          "channel": "ig_official",
+          "at": "2026-10-30T01:14:03.323Z",
+          "audience": 4116,
+          "source": "https://www.instagram.com/offmoon_official/"
+        }
+      ]
+    },
+    {
+      "channel": "yt_label",
+      "points": [
+        {
+          "channel": "yt_label",
+          "at": "2026-09-17T01:10:29.088Z",
+          "audience": 27,
+          "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg"
+        },
+        {
+          "channel": "yt_label",
+          "at": "2026-09-23T09:15:31.971Z",
+          "audience": 65,
+          "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg"
+        },
+        {
+          "channel": "yt_label",
+          "at": "2026-10-01T03:33:22.470Z",
+          "audience": 130,
+          "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg"
+        },
+        {
+          "channel": "yt_label",
+          "at": "2026-10-02T02:49:11.734Z",
+          "audience": 130,
+          "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg"
+        },
+        {
+          "channel": "yt_label",
+          "at": "2026-10-09T13:53:21.966Z",
+          "audience": 167,
+          "source": "https://www.youtube.com/watch?v=pmzc8gzT5sU"
+        },
+        {
+          "channel": "yt_label",
+          "at": "2026-10-22T03:47:13.075Z",
+          "audience": 3610,
+          "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg",
+          "approx": true
+        },
+        {
+          "channel": "yt_label",
+          "at": "2026-10-23T01:04:03.986Z",
+          "audience": 3770,
+          "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg/shorts",
+          "approx": true
+        },
+        {
+          "channel": "yt_label",
+          "at": "2026-10-30T01:15:55.603Z",
+          "audience": 4180,
+          "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg/shorts",
+          "approx": true
+        },
+        {
+          "channel": "yt_label",
+          "at": "2026-11-06T01:21:12.897Z",
+          "audience": 4220,
+          "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg",
+          "approx": true
+        },
+        {
+          "channel": "yt_label",
+          "at": "2026-11-13T01:07:20.493Z",
+          "audience": 4270,
+          "source": "https://www.youtube.com/channel/UC--8A1PP49_JwjOvUMjkFdg",
+          "approx": true
+        }
+      ]
+    }
+  ],
+  "note": "초기 IG56 및 YT0은 날짜 미상 본인 기록. 10/23 릴스20편·470만조회·13편10만+와 10/7 인사이트는 과거 성과로 보존."
+}
